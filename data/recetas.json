@@ -1,0 +1,4760 @@
+[
+  {
+    "id": 1,
+    "nombre": "Bowl de Avena con Semillas de Calabaza y Frutillas",
+    "descripcion": "Un desayuno reconfortante listo en 10 minutos. La avena te da energía sostenida durante toda la mañana, y las semillas de calabaza aportan el zinc que tu tiroides necesita.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 10,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "avena arrollada sin gluten"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "leche de almendras sin azúcar"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "banana madura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "semillas de calabaza"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "frutillas frescas o congeladas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "miel pura (opcional)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "canela en polvo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Colocá la avena en una ollita con la leche de almendras. Cocinás a fuego medio revolviendo durante 5 minutos hasta que espese."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Volcás en un bowl. Cortás la banana en rodajas y la distribuís encima junto con las frutillas."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Esparcís las semillas de calabaza, un chorrito de miel si querés y una pizca de canela. Servís de inmediato."
+      }
+    ],
+    "tip_nutricional": "Las semillas de calabaza son una de las mejores fuentes de zinc de origen vegetal. El zinc es mineral clave para la síntesis de hormonas tiroideas T3 y T4.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Tostadas de Batata con Palta y Huevo Pochado",
+    "descripcion": "La alternativa sin gluten al desayuno clásico. La batata reemplaza al pan con un dulzor natural, y el huevo aporta selenio para la conversión hormonal tiroidea.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "batata mediana"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "palta madura"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "jugo de limón"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "vinagre blanco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "semillas de sésamo o lino (opcional)"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cortás la batata en rodajas de 1 cm. Las tostás en la tostadora (2-3 ciclos) o las dorás en sartén 4 minutos por lado."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Aplastás la palta con limón, sal y pimienta."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Para el huevo pochado: hervís agua con vinagre, hacés un remolino y sumergís el huevo. Cocinás 3 minutos."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Armás: tostada de batata → palta → huevo pochado. Esparcís semillas y servís."
+      }
+    ],
+    "tip_nutricional": "Un huevo aporta aproximadamente 20 mcg de selenio, cubriendo casi el 40% de la necesidad diaria. El selenio es fundamental para la enzima deiodinasa que convierte T4 en T3 activa.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Huevos Revueltos con Espinaca y Tomate Cherry",
+    "descripcion": "Proteínas de calidad y hierro en un desayuno rápido de 10 minutos. La espinaca salteada pierde sus antinutrientes al cocinarse, haciéndola perfectamente apta.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 10,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "espinaca fresca"
+      },
+      {
+        "cantidad": "6",
+        "unidad": "unidades",
+        "nombre": "tomates cherry"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "diente",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y orégano seco"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Calentás el aceite a fuego medio. Dorás el ajo picado 30 segundos. Agregás la espinaca y cocinás 2 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Incorporás los tomates cherry cortados al medio y cocinás 1 minuto más."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Batís los huevos con sal y pimienta, los volcás en la sartén. Revolvés suavemente a fuego bajo hasta que queden cremosos."
+      }
+    ],
+    "tip_nutricional": "La espinaca cocida reduce significativamente su contenido de oxalatos. Al cocinarla, el hierro y el folato quedan más biodisponibles. Los huevos aportan selenio, colina y proteína completa.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Smoothie Verde de Pera, Pepino y Jengibre",
+    "descripcion": "Una bebida refrescante antiinflamatoria. El jengibre es antiinflamatorio natural, el pepino hidrata y la pera aporta dulzor sin azúcar refinada. Lista en 5 minutos.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 5,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "pera madura"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "pepino mediano"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "espinaca baby"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cm",
+        "nombre": "jengibre fresco pelado"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "agua fría o hielo"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "limón (jugo)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "semillas de chía (opcional)"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Lavás y cortás la pera en trozos. Pelás el pepino y lo cortás en rodajas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Colocás todos los ingredientes en la licuadora y licuás 1 minuto a velocidad máxima."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Si agregás chía, dejás reposar 2 minutos antes de tomar. Tomás de inmediato."
+      }
+    ],
+    "tip_nutricional": "El jengibre contiene gingerol, un compuesto con propiedades antiinflamatorias demostradas. Para Hashimoto, incluir antiinflamatorios naturales en la dieta diaria es una estrategia nutricional sólida.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Panqueques de Banana y Huevo (2 ingredientes)",
+    "descripcion": "Solo banana y huevo, sin harina, sin azúcar. Quedan doraditos y dulces naturalmente en 8 minutos. La receta que más comparten nuestras usuarias.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 8,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "banana muy madura"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "aceite de coco"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "frutas del bosque para acompañar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Aplastás la banana con un tenedor hasta puré sin grumos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Agregás los huevos y mezclás bien. Podés agregar canela."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Calentás sartén antiadherente a fuego medio-bajo con mínimo aceite. Volcás pequeñas porciones y cocinás 2 minutos por lado."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Servís con frutas del bosque frescas."
+      }
+    ],
+    "tip_nutricional": "Aporta potasio de la banana, proteína completa y selenio de los huevos, sin gluten, sin lácteos ni azúcar añadida. Ideal para Hashimoto.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Yogur Natural con Granola Casera y Nueces de Brasil",
+    "descripcion": "Una nuez de Brasil al día puede cubrir toda tu necesidad de selenio. Este bowl cremoso combina probióticos del yogur con granola casera.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 20,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "avena arrollada gruesa sin gluten"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "nueces picadas"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "taza",
+        "nombre": "semillas de girasol"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "nueces de Brasil (1 por porción)"
+      },
+      {
+        "cantidad": "400",
+        "unidad": "g",
+        "nombre": "yogur natural entero sin azúcar"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "frutas frescas de estación"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 170°C. Mezclás la avena con aceite de coco, miel, nueces, semillas y canela."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Extendés en placa y horneás 15 minutos revolviendo a la mitad. Dejás enfriar."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Para servir: yogur natural + granola + frutas frescas + 1 nuez de Brasil entera."
+      }
+    ],
+    "tip_nutricional": "Una sola nuez de Brasil aporta entre 70 y 90 mcg de selenio, cubriendo el 100% de la ingesta diaria recomendada. No comer más de 2-3 nueces por día.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": false,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Tostadas de Pan Integral con Ricota y Salmón Ahumado",
+    "descripcion": "Un desayuno de nivel restaurante en tu casa. El salmón ahumado es una fuente excepcional de omega-3 y selenio.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 8,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "rebanadas",
+        "nombre": "pan integral de centeno o arroz"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "ricota descremada"
+      },
+      {
+        "cantidad": "60",
+        "unidad": "g",
+        "nombre": "salmón ahumado"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "unidad",
+        "nombre": "pepino en rodajas finas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "eneldo fresco o seco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Tostás las rebanadas de pan."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Untás con ricota. Condimentás con limón y pimienta."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Disponés el salmón, el pepino y el eneldo. Exprimís más limón fresco."
+      }
+    ],
+    "tip_nutricional": "El salmón ahumado aporta omega-3 EPA y DHA que reducen la inflamación sistémica, especialmente relevante en Hashimoto.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": false,
+    "sin_lacteos": false,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Porridge de Quinoa con Manzana y Canela",
+    "descripcion": "La quinoa no es solo para el almuerzo. Como porridge caliente es cremosa y tiene más proteína que la avena. Con manzana y canela queda un desayuno dulce naturalmente.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "quinoa blanca"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "tazas",
+        "nombre": "leche de almendras o avena"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "manzana"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "miel o sirope de arce"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "nueces picadas para servir"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Lavás la quinoa en colador bajo agua fría."
+      },
+      {
+        "numero": 2,
+        "descripcion": "En ollita, mezclás la quinoa con la leche vegetal, la canela, la vainilla y la sal. Cocinás 15 minutos tapado."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Salteás la manzana en cubitos con miel 3 minutos hasta caramelizar."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Servís el porridge con la manzana encima y nueces picadas."
+      }
+    ],
+    "tip_nutricional": "La quinoa es proteína completa y contiene tirosina, precursor directo de T3 y T4. También aporta zinc y hierro. Naturalmente sin gluten, ideal para Hashimoto.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Muffins de Arándanos y Harina de Almendras",
+    "descripcion": "Muffins húmedos sin gluten, sin harinas refinadas. Los arándanos aportan antioxidantes. Se preparan el domingo y duran toda la semana.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 30,
+    "porciones": 8,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "harina de almendras"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "polvo para hornear sin gluten"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "arándanos frescos o congelados"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 180°C. Preparás molde de muffins con capsulitas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Mezclás secos en un bowl y húmedos en otro. Unís ambos y agregás arándanos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Distribuís en los moldes y horneás 20-22 minutos hasta que un palillo salga limpio."
+      }
+    ],
+    "tip_nutricional": "Los arándanos contienen antocianinas que reducen el estrés oxidativo elevado en condiciones autoinmunes. La harina de almendras aporta vitamina E, magnesio y proteínas.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Revuelto de Sardinas con Tomate y Orégano",
+    "descripcion": "Las sardinas en lata son uno de los alimentos más nutritivos y económicos para la tiroides. Este desayuno salado está listo en 7 minutos.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 7,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "sardinas al natural (90g)"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "tomates medianos"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "orégano seco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cortás la cebolla en medias lunas y los tomates en cubitos. Sofreís la cebolla 3 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Agregás el tomate y el orégano, cocinás 2 minutos más."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Incorporás las sardinas escurridas y desmenuzadas. Cocinás 1 minuto. Condimentás y servís."
+      }
+    ],
+    "tip_nutricional": "Las sardinas enlatadas al natural son una fuente excepcional de omega-3 EPA y DHA, selenio y calcio. Para Hashimoto son especialmente recomendadas.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/10.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Chia Pudding de Coco con Mango",
+    "descripcion": "Se prepara la noche anterior en 5 minutos y al despertar el desayuno ya está listo. Cremoso y tropical con omega-3 vegetal.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 5,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "semillas de chía"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "tazas",
+        "nombre": "leche de coco light"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "miel o stevia al gusto"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "mango maduro"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "coco rallado sin azúcar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "La noche anterior: mezclás chía con leche de coco, vainilla y endulzante. Revolvés bien y guardás en heladera mínimo 4 horas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Al servir: cortás el mango en cubitos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Servís el pudding con el mango encima y coco rallado."
+      }
+    ],
+    "tip_nutricional": "Las semillas de chía aportan ALA (omega-3 vegetal), calcio y magnesio. El magnesio suele estar bajo en hipotiroidismo y es cofactor en más de 300 reacciones enzimáticas.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/11.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Omelette de Verduras con Queso de Cabra",
+    "descripcion": "Un omelette sustancioso y colorido. El queso de cabra es más tolerable que el de vaca para personas sensibles a los lácteos.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 12,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "unidad",
+        "nombre": "morrón rojo"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "espinaca"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "queso de cabra desmenuzado"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y hierbas provenzales"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Salteás el morrón y la cebolla 3 minutos. Agregás la espinaca 1 minuto más. Reservás."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Batís los huevos con sal y pimienta. Volcás en sartén a fuego medio-bajo."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Cuando los bordes cuajan, distribuís las verduras y el queso sobre una mitad. Doblás y cocinás 1 minuto más."
+      }
+    ],
+    "tip_nutricional": "El morrón rojo aporta el doble de vitamina C que una naranja. La vitamina C potencia la absorción del hierro presente en la espinaca, fundamental para la función tiroidea.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": false,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/12.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Tostadas de Arroz con Manteca de Maní y Banana",
+    "descripcion": "Simple y sin gluten. La manteca de maní natural aporta zinc y grasas saludables. Perfecta para los desayunos express.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 5,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "galletas de arroz integral grandes"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "manteca de maní natural"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "banana"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "semillas de chía"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Untás las galletas de arroz con la manteca de maní."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cortás la banana en rodajas y la disponés encima."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Espolvoreás con canela y semillas de chía."
+      }
+    ],
+    "tip_nutricional": "El maní natural aporta zinc, magnesio y vitamina B6, cofactores en la producción de hormonas tiroideas. Elegir manteca de maní con un solo ingrediente (maní).",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/13.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Budín de Zanahoria y Nueces sin Harina",
+    "descripcion": "Un budín húmedo y especiado sin gluten. Las nueces aportan omega-3 vegetal. Se prepara el domingo y dura de desayuno toda la semana.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 45,
+    "porciones": 10,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "3",
+        "unidad": "tazas",
+        "nombre": "zanahoria rallada"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "harina de almendras"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "1/3",
+        "unidad": "taza",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "1/3",
+        "unidad": "taza",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "cdita",
+        "nombre": "jengibre en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "polvo para hornear sin gluten"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "nueces picadas gruesas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 175°C. Engrasás un molde de budín."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Batís los huevos con el aceite y la miel. Incorporás la zanahoria rallada."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Agregás la harina de almendras, canela, jengibre, polvo para hornear y sal. Incorporás las nueces."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Volcás en el molde y horneás 35-40 minutos. Dejás enfriar completamente antes de cortar."
+      }
+    ],
+    "tip_nutricional": "Las nueces son la fuente vegetal más rica en omega-3 ALA. Para Hashimoto, los omega-3 ayudan a modular la respuesta autoinmune.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/14.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Wrap de Arroz con Pavo, Palta y Espinaca",
+    "descripcion": "Para quienes necesitan un desayuno proteico de llevar al trabajo. El pavo es una de las mejores fuentes de tirosina, precursor de las hormonas tiroideas.",
+    "categoria": "desayuno",
+    "tiempo_preparacion": 10,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "tapa de arroz"
+      },
+      {
+        "cantidad": "80",
+        "unidad": "g",
+        "nombre": "pechuga de pavo en fetas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "palta madura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "espinaca baby"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "unidad",
+        "nombre": "tomate en rodajas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "mostaza sin azúcar"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Si el wrap de arroz está rígido, lo hidratás 30 segundos en agua tibia."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Extendés la mostaza sobre el wrap. Distribuís la espinaca, el pavo, el tomate y la palta."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Condimentás y enrollás bien apretado."
+      }
+    ],
+    "tip_nutricional": "El pavo es una de las mejores fuentes de tirosina, el aminoácido que combinado con el yodo forma las hormonas T3 y T4. También aporta selenio y zinc.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/15.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Sopa de Lentejas Rojas con Cúrcuma y Jengibre",
+    "descripcion": "La receta más compartida. Antiinflamatoria, cremosa y lista en 25 minutos sin remojo previo. Perfecta para Hashimoto.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 25,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "lentejas rojas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla mediana"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "cúrcuma en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "jengibre fresco rallado"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "tomates perita pelados (400g)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "litro",
+        "nombre": "caldo de verduras bajo en sodio"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "cdita",
+        "nombre": "comino molido"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Sofreís la cebolla picada 5 minutos. Agregás el ajo y el jengibre, cocinás 1 minuto más."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Incorporás la cúrcuma y el comino, revolvés 30 segundos. Agregás los tomates y cocinás 3 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Sumás las lentejas lavadas y el caldo. Cocinás 18-20 minutos a fuego suave."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Mixeás parcialmente para textura cremosa con algo de cuerpo."
+      }
+    ],
+    "tip_nutricional": "La curcumina de la cúrcuma es un potente antiinflamatorio. Su absorción aumenta hasta 20 veces combinada con pimienta negra. Las lentejas aportan hierro y zinc sin el efecto bociógeno de la soja.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/16.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Pollo al Horno con Zapallo y Romero",
+    "descripcion": "Un clásico reconfortante. El pollo aporta tirosina y selenio, el zapallo suma betacaroteno. Todo en una sola placa de horno.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 50,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "kg",
+        "nombre": "muslos y patas de pollo sin piel"
+      },
+      {
+        "cantidad": "500",
+        "unidad": "g",
+        "nombre": "zapallo en cubos grandes"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "cebollas en gajos"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "dientes",
+        "nombre": "ajo entero con cáscara"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "ramitas",
+        "nombre": "romero fresco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y pimentón dulce"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 200°C. Distribuís el zapallo, la cebolla y el ajo en una fuente."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Colocás el pollo encima. Regás con aceite de oliva, jugo de limón, sal, pimienta y pimentón. Distribuís el romero."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Horneás 40-45 minutos hasta que el pollo esté dorado. A mitad bañás con los jugos."
+      }
+    ],
+    "tip_nutricional": "El zapallo aporta betacaroteno que el organismo convierte en vitamina A, necesaria para la síntesis de la hormona TSH. El romero tiene propiedades antioxidantes.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/17.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Ensalada Tibia de Quinoa con Atún y Palta",
+    "descripcion": "Una ensalada que llena de verdad. El atún en lata es la fuente de selenio más accesible. Lista en 20 minutos.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "quinoa blanca"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "latas",
+        "nombre": "atún al natural (160g cada una)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "palta madura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "pepino"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "rúcula o espinaca baby"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cocinás la quinoa lavada en 2 tazas de agua con sal durante 15 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Escurrís el atún y lo desmenuzás. Cortás el pepino en cubitos y la palta en láminas."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Mezclás la quinoa tibia con el atún, pepino y rúcula. Aderezás con aceite y limón. Colocás la palta encima."
+      }
+    ],
+    "tip_nutricional": "El atún al natural aporta aproximadamente 80-90 mcg de selenio por 100g, superando el 100% de la necesidad diaria. Preferir al natural sobre el que viene en aceite de soja.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/18.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Bife de Lomo con Ensalada de Remolacha y Rúcula",
+    "descripcion": "La carne roja magra es zinc en su forma más biodisponible. Con remolacha asada que aporta betaína para el hígado.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 25,
+    "porciones": 2,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "bifes de lomo (180g cada uno)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "remolachas medianas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "puñados",
+        "nombre": "rúcula"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "vinagre balsámico"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "nueces"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal gruesa y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Hervís las remolachas enteras con cáscara 30-35 minutos. Dejás enfriar, pelás y cortás en gajos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Calentás sartén al máximo. Salpimentás los bifes. Cocinás 2-3 minutos por lado."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Armás la ensalada: rúcula + remolacha + nueces con aceite y balsámico. Servís con el bife."
+      }
+    ],
+    "tip_nutricional": "La carne roja magra aporta zinc hemínico, la forma más biodisponible, con una absorción hasta 3 veces mayor que las fuentes vegetales. Fundamental para hipotiroidismo.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/19.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Cazuela de Garbanzos con Espinaca y Tomate",
+    "descripcion": "Un guiso vegetariano reconfortante. Los garbanzos aportan zinc y hierro vegetal, la espinaca cocida suma hierro y folato.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "latas",
+        "nombre": "garbanzos cocidos escurridos"
+      },
+      {
+        "cantidad": "400",
+        "unidad": "g",
+        "nombre": "espinaca fresca o congelada"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "tomates perita pelados (400g)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla grande"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón ahumado"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "comino molido"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Sofreís la cebolla picada 5 minutos. Agregás el ajo, el pimentón y el comino, revolvés 1 minuto."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Incorporás los tomates y cocinás 5 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Agregás los garbanzos, cocinás 5 minutos. Sumás la espinaca 3 minutos más."
+      }
+    ],
+    "tip_nutricional": "Los garbanzos aportan zinc y hierro no hemínico. Para maximizar la absorción del hierro vegetal, exprimí limón al servir. El folato de la espinaca apoya la metilación, proceso importante en Hashimoto.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/20.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Filet de Merluza al Vapor con Verduras y Limón",
+    "descripcion": "La merluza es accesible, liviana y llena de proteínas. Al vapor conserva todos sus nutrientes. Un almuerzo completo en 20 minutos.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "filetes",
+        "nombre": "merluza fresca (200g cada uno)"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zanahoria en bastones"
+      },
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "chauchas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "ramas",
+        "nombre": "perejil fresco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y ajo en polvo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Armás la vaporera. Colocás las zanahorias y chauchas en la cesta de vapor."
+      },
+      {
+        "numero": 2,
+        "descripcion": "A los 5 minutos, colocás los filetes condimentados encima de las verduras."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Cocinás 10-12 minutos más. Servís con aceite de oliva crudo, limón y perejil."
+      }
+    ],
+    "tip_nutricional": "La merluza es fuente de proteína magra con yodo moderado y selenio. La cocción al vapor preserva el 100% de los nutrientes hidrosolubles.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/21.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Arroz Integral con Pollo Desmenuzado y Verduras Salteadas",
+    "descripcion": "El batch cooking perfecto: cocinás el doble y tenés almuerzo y cena. El arroz integral aporta fibra y complejo B.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 35,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1.5",
+        "unidad": "tazas",
+        "nombre": "arroz integral"
+      },
+      {
+        "cantidad": "500",
+        "unidad": "g",
+        "nombre": "pechuga de pollo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "morrón rojo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zucchini"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón dulce"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cocinás el arroz integral en 3 tazas de agua 30 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Hervís la pechuga 20 minutos. Dejás enfriar y desmenuzás."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Salteás la cebolla y el ajo 3 minutos. Agregás el morrón y el zucchini 5 minutos. Sumás el pollo y el pimentón."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Incorporás el arroz, mezclás todo y servís."
+      }
+    ],
+    "tip_nutricional": "El arroz integral tiene menor índice glucémico que el blanco, favoreciendo la estabilidad glucémica alterada en hipotiroidismo. Sus vitaminas B son cofactores en la síntesis hormonal tiroidea.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/22.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Ensalada de Rúcula con Nueces, Pera y Aderezo de Limón",
+    "descripcion": "Fresca, crocante y antiinflamatoria. Las nueces aportan omega-3. Perfecta para días de calor.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 10,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "puñados",
+        "nombre": "rúcula fresca"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "pera madura firme"
+      },
+      {
+        "cantidad": "1/3",
+        "unidad": "taza",
+        "nombre": "nueces partidas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "jugo de limón fresco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Lavás y secás la rúcula. Cortás la pera en gajos finos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Batís el aceite con el limón, la miel, sal y pimienta hasta emulsionar."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Mezclás la rúcula con la pera y las nueces. Rociás con el aderezo."
+      }
+    ],
+    "tip_nutricional": "Las nueces son la fuente vegetal más rica en omega-3 ALA. Para Hashimoto, los ácidos grasos omega-3 ayudan a reducir los niveles de anticuerpos anti-TPO. Un puñado diario está respaldado.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/23.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "Milanesa de Pollo al Horno con Ensalada de Zanahoria Rallada",
+    "descripcion": "La milanesa sin gluten. La costra de harina de almendras queda igual de crujiente que el pan rallado. Sin fritura.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "pechugas de pollo finas"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "tazas",
+        "nombre": "harina de almendras"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "ajo en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón dulce"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "zanahorias ralladas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 200°C. Mezclás la harina de almendras con el ajo, pimentón, sal y pimienta."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Pasás cada pechuga por huevo batido y luego por la mezcla de harina de almendras."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Horneás 20-22 minutos dando vuelta a la mitad, hasta que estén doradas."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Mezclás la zanahoria rallada con aceite, limón, sal y perejil."
+      }
+    ],
+    "tip_nutricional": "Esta milanesa elimina el gluten del pan rallado (relevante para Hashimoto) y el aceite de fritura que genera compuestos proinflamatorios.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/24.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Crema de Zapallo con Leche de Coco y Semillas Tostadas",
+    "descripcion": "Una crema aterciopelada que abraza. El zapallo aporta betacaroteno, la leche de coco da cremosidad sin lácteos.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "800",
+        "unidad": "g",
+        "nombre": "zapallo anco pelado y en cubos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "leche de coco (400ml)"
+      },
+      {
+        "cantidad": "500",
+        "unidad": "ml",
+        "nombre": "caldo de verduras"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "jengibre en polvo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "mix de semillas"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Sofreís la cebolla y el ajo 5 minutos. Agregás el zapallo y el jengibre, cocinás 3 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Incorporás el caldo y cocinás 20 minutos hasta que el zapallo esté muy tierno."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Añadís la leche de coco y mixeás hasta crema homogénea."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Tostás las semillas 2 minutos en sartén seca. Servís la crema con semillas encima."
+      }
+    ],
+    "tip_nutricional": "El zapallo aporta betacaroteno que el cuerpo convierte en vitamina A, necesaria para la función de los receptores hormonales tiroideos.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/25.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Hamburguesas de Lentejas con Ensalada Verde",
+    "descripcion": "Hamburguesas vegetarianas que se arman solas y quedan firmes. Ricas en zinc, hierro y proteína vegetal. Se congelan crudas.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 35,
+    "porciones": 6,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "lentejas pardas cocidas y escurridas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "avena arrollada sin gluten"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla pequeña"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "comino molido"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón ahumado"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "perejil fresco picado"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Procesás las lentejas hasta pasta gruesa. Mezclás con la cebolla y el ajo picados fino, la avena, el comino, el pimentón y el perejil."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Formás 6 hamburguesas y refrigerás 20 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Cocinás en sartén con aceite 4 minutos por lado sin mover. Servís sobre ensalada verde."
+      }
+    ],
+    "tip_nutricional": "Las lentejas pardas aportan zinc, hierro y proteína vegetal. Son naturalmente libres de gluten y preferibles a la soja por no tener actividad estrogénica.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/26.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Curry de Pollo con Coliflor y Arroz de Coliflor",
+    "descripcion": "Un curry suave y aromático sin gluten ni lácteos. La coliflor cocida es completamente segura para la tiroides.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 35,
+    "porciones": 4,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "600",
+        "unidad": "g",
+        "nombre": "pechuga de pollo en cubos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "coliflor grande"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "leche de coco (400ml)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cm",
+        "nombre": "jengibre fresco"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cditas",
+        "nombre": "curry en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "cúrcuma"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de coco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y cilantro fresco"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Dividís la coliflor: mitad rallada para el arroz, mitad en flores para el curry."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sofreís cebolla, ajo y jengibre 3 minutos. Agregás el curry y la cúrcuma. Sumás el pollo y sellás 3 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Incorporás las flores de coliflor y la leche de coco. Cocinás 15 minutos."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Para el arroz de coliflor: salteás la coliflor rallada en sartén seca 5 minutos. Servís el curry sobre el arroz."
+      }
+    ],
+    "tip_nutricional": "La coliflor cocida ve reducidos sus glucosinolatos bociógenos hasta un 40%. En personas con hipotiroidismo sin deficiencia de yodo, la coliflor cocida está perfectamente permitida.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/27.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Matambre a la Plancha con Ensalada Caprese Sin Lácteos",
+    "descripcion": "El matambre es uno de los cortes más ricos en zinc. La ensalada caprese con palta en lugar de mozzarella. Un almuerzo clásico argentino adaptado.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 20,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "700",
+        "unidad": "g",
+        "nombre": "matambre de novillo fino"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "tomates perita maduros"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "paltas maduras"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "albahaca fresca"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal gruesa y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Calentás plancha al máximo. Salpimentás el matambre. Cocinás 3-4 minutos por lado. Dejás reposar 5 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cortás los tomates y las paltas en rodajas similares. Armás la ensalada intercalando tomate y palta."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Distribuís la albahaca, rociás con aceite de oliva y sal. Servís con el matambre cortado."
+      }
+    ],
+    "tip_nutricional": "El matambre aporta zinc hemínico y hierro de alta biodisponibilidad. La palta reemplaza a la mozzarella aportando grasas monoinsaturadas antiinflamatorias.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/28.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "Bowl Mediterráneo con Hummus, Verduras Asadas y Quinoa",
+    "descripcion": "Un bowl colorido y nutritivo. El hummus aporta hierro y zinc de los garbanzos. Las verduras asadas concentran sus sabores.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 40,
+    "porciones": 3,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "quinoa blanca"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "garbanzos cocidos (400g)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "tahini"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zucchini"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "morrón rojo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "berenjena"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, comino, pimentón y perejil"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cocinás la quinoa. Cortás zucchini, morrón y berenjena, aderezás con aceite y pimentón. Asás en horno 200°C 25 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Para el hummus: procesás los garbanzos con tahini, limón, ajo, sal y comino hasta pasta cremosa."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Armás los bowls: quinoa + verduras asadas + hummus + aceite y limón."
+      }
+    ],
+    "tip_nutricional": "El tahini aporta calcio, zinc y cobre. El limón mejora la absorción del hierro no hemínico de los garbanzos. Un bowl de este tipo cubre ampliamente las necesidades de zinc del día.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/29.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Caldo de Huesos con Vegetales y Fideos de Arroz",
+    "descripcion": "El caldo de huesos casero es el multivitamínico natural. Colágeno, minerales y glucosamina en un caldo reconfortante que también cuida el intestino.",
+    "categoria": "almuerzo",
+    "tiempo_preparacion": 180,
+    "porciones": 6,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "kg",
+        "nombre": "huesos de res (caracú y/o rodilla)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "zanahorias"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "ramas",
+        "nombre": "apio"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla entera"
+      },
+      {
+        "cantidad": "5",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "vinagre de manzana"
+      },
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "fideos de arroz finitos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "perejil fresco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta negra"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Tostás los huesos en horno 200°C 30 minutos. Los colocás en olla grande con agua fría, el vinagre y todos los vegetales."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Llevás a hervor, retirás la espuma. Bajás al mínimo y cocinás tapado 2-4 horas."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Colás el caldo. Hervís los fideos de arroz en el caldo 3-4 minutos. Servís con perejil fresco."
+      }
+    ],
+    "tip_nutricional": "El caldo de huesos aporta colágeno hidrolizado y glicina que nutren la mucosa intestinal. Para Hashimoto, donde el intestino permeable es un factor asociado, el caldo de huesos es altamente recomendado.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/30.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "Salmón a la Plancha con Espárragos y Puré de Coliflor",
+    "descripcion": "La cena antiinflamatoria por excelencia. El salmón fresco aporta omega-3 y selenio, el puré de coliflor reemplaza al de papa.",
+    "categoria": "cena",
+    "tiempo_preparacion": 25,
+    "porciones": 2,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "filetes",
+        "nombre": "salmón fresco (180g cada uno)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "atado",
+        "nombre": "espárragos frescos"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "coliflor mediana"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y eneldo seco"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Para el puré: hervís la coliflor en flores 12 minutos. Procesás con ajo, aceite, sal y pimienta hasta puré liso."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Calentás plancha al máximo. Condimentás el salmón con sal, pimienta y eneldo. Cocinás con la piel para abajo 4 minutos, dás vuelta 2 minutos más."
+      },
+      {
+        "numero": 3,
+        "descripcion": "En la misma plancha, salteás los espárragos con ajo y aceite 4 minutos. Servís el salmón sobre el puré con los espárragos."
+      }
+    ],
+    "tip_nutricional": "El salmón fresco aporta omega-3 EPA y DHA (antiinflamatorios), selenio (conversión T4/T3) y vitamina D (regulación inmune, clave en Hashimoto).",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/31.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Sopa de Verduras con Albóndigas de Pollo",
+    "descripcion": "Una sopa reconfortante para noches frías. Las albóndigas de pollo se cocinan directo en el caldo. Liviana y nutritiva.",
+    "categoria": "cena",
+    "tiempo_preparacion": 35,
+    "porciones": 4,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "500",
+        "unidad": "g",
+        "nombre": "carne picada de pollo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "huevo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "harina de almendras"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zanahoria"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "ramas",
+        "nombre": "apio"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "puerro"
+      },
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "zapallo en cubos pequeños"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "litros",
+        "nombre": "caldo de verduras"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta, orégano y perejil"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Mezclás la carne picada con el huevo, la harina de almendras, sal, pimienta y orégano. Formás albóndigas del tamaño de una nuez."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Calentás el caldo. Agregás la zanahoria, el apio y el zapallo en cubos. Cocinás 10 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Incorporás las albóndigas suavemente. Cocinás 12-15 minutos a fuego suave. Agregás el puerro los últimos 3 minutos."
+      }
+    ],
+    "tip_nutricional": "Esta sopa es fácil de digerir para la cena. El caldo aporta minerales y glicina del colágeno. El pollo aporta tirosina y las verduras vitaminas del complejo B.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/32.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Tortilla Española de Verduras sin Papa",
+    "descripcion": "Una tortilla esponjosa cargada de verduras. Sin papa para mantener el índice glucémico bajo en la cena.",
+    "categoria": "cena",
+    "tiempo_preparacion": 25,
+    "porciones": 3,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "6",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zucchini medianos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "morrón rojo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla mediana"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y perejil"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cortás el zucchini, el morrón y la cebolla en rodajas. Sofreís las verduras 8 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Batís los huevos con sal, pimienta y perejil. Volcás sobre las verduras en la sartén. Cocinás a fuego bajo 5 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Terminás en el horno a 180°C grill 5 minutos hasta que la superficie quede dorada."
+      }
+    ],
+    "tip_nutricional": "Los huevos aportan selenio y colina que apoya la función hepática importante para metabolizar las hormonas tiroideas. Sin papa se reduce la carga glucémica nocturna.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/33.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "Filet de Merluza al Horno con Tomates y Aceitunas",
+    "descripcion": "Una cena mediterránea que se prepara en 20 minutos. Los tomates y las aceitunas dan una salsa natural que baña el pescado.",
+    "categoria": "cena",
+    "tiempo_preparacion": 25,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "filetes",
+        "nombre": "merluza fresca (200g c/u)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "tomates perita"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "aceitunas verdes sin carozo"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "vino blanco seco o caldo"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta, orégano y perejil"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 190°C. En una fuente, distribuís los tomates en cubitos, las aceitunas y el ajo laminado. Rociás con aceite y el vino."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Colocás los filetes condimentados encima."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Horneás 18-20 minutos hasta que el pescado esté opaco. Servís con perejil fresco."
+      }
+    ],
+    "tip_nutricional": "La merluza es proteína magra de fácil digestión, ideal para la cena. Las aceitunas aportan oleato de sodio con propiedades antiinflamatorias.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/34.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "Wok de Verduras con Huevo y Arroz de Coliflor",
+    "descripcion": "Una cena rápida de 15 minutos inspirada en el arroz frito sin el arroz. Colorida, saciante y sin culpa.",
+    "categoria": "cena",
+    "tiempo_preparacion": 15,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "coliflor grande (rallada)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "zanahoria en juliana"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "morrón"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "cebolla de verdeo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de coco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "salsa tamari (soja sin trigo)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cm",
+        "nombre": "jengibre fresco rallado"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Calentás el wok a fuego alto con aceite de coco. Salteás la zanahoria y el morrón 3 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Empujás las verduras a un lado, volcás los huevos batidos y revolvés rápido. Mezclás con las verduras."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Sumás la coliflor rallada, el jengibre y el tamari. Cocinás 3-4 minutos. Agregás la cebolla de verdeo y servís."
+      }
+    ],
+    "tip_nutricional": "El tamari es la salsa de soja sin trigo, naturalmente sin gluten. La coliflor cocida brevemente conserva más nutrientes y mantiene textura. Baja en carbohidratos, ideal para la cena.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": false,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/35.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "Pollo Desmenuzado con Verduras Asadas y Puré de Batata",
+    "descripcion": "Una cena reconfortante. El puré de batata es naturalmente dulce con menor índice glucémico que la papa.",
+    "categoria": "cena",
+    "tiempo_preparacion": 45,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "600",
+        "unidad": "g",
+        "nombre": "pechuga de pollo"
+      },
+      {
+        "cantidad": "600",
+        "unidad": "g",
+        "nombre": "batatas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "morrón rojo asado"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zucchini"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón ahumado"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y tomillo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Hervís las batatas peladas 20 minutos hasta muy tiernas. Aplastás con aceite y sal."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cocinás el pollo en olla con agua y laurel 20 minutos. Desmenuzás y condimentás con limón y pimentón."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Asás el zucchini y el morrón en sartén 8 minutos. Servís el puré con el pollo desmenuzado encima."
+      }
+    ],
+    "tip_nutricional": "La batata tiene menor índice glucémico que la papa y aporta betacaroteno, vitamina C y potasio. La estabilidad glucémica en la cena favorece la calidad del sueño.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/36.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "Crema de Brócoli y Ajo Asado",
+    "descripcion": "El brócoli cocido no afecta la tiroides. Esta crema suave con ajo asado tiene un sabor profundo. Lista en 25 minutos.",
+    "categoria": "cena",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "brócoli grande"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cabeza",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "litro",
+        "nombre": "caldo de verduras"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y nuez moscada"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "semillas de girasol tostadas para servir"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Envolvés la cabeza de ajo en papel aluminio con aceite. Asás en horno 180°C 30 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sofreís la cebolla 5 minutos. Agregás el brócoli en flores y el caldo. Cocinás 15 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Incorporás los dientes de ajo asado. Mixeás todo hasta crema homogénea. Servís con semillas tostadas."
+      }
+    ],
+    "tip_nutricional": "El brócoli cocido ve reducidos sus glucosinolatos bociógenos hasta un 40%, eliminando prácticamente el riesgo. Aporta sulforafano, un potente antiinflamatorio.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/37.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "Hamburguesa de Carne con Palta y Ensalada sin Pan",
+    "descripcion": "La hamburguesa sin pan pero sin resignar nada. La carne de res aporta zinc en su forma más biodisponible.",
+    "categoria": "cena",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "400",
+        "unidad": "g",
+        "nombre": "carne picada de novillo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "palta madura"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "hojas",
+        "nombre": "lechuga mantecosa o romana"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "tomates"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "cebolla morada"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "mostaza sin azúcar"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal gruesa, pimienta negra y ajo en polvo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Condimentás la carne y formás 2 hamburguesas. Presionás el centro con el pulgar."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cocinás en sartén o plancha al máximo 3-4 minutos por lado. Dejás reposar 2 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Armás el plato: lechuga + tomate + cebolla morada + hamburguesa + palta + mostaza."
+      }
+    ],
+    "tip_nutricional": "La carne picada de novillo aporta zinc hemínico, la forma más biodisponible de zinc. La palta aporta grasas monoinsaturadas que facilitan la absorción de betacaroteno del tomate.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/38.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "Fideos de Zucchini (Zoodles) con Salsa de Tomate y Albahaca",
+    "descripcion": "Pasta sin pasta. El zucchini en espiral absorbe la salsa igual que los fideos de trigo. Listo en 15 minutos.",
+    "categoria": "cena",
+    "tiempo_preparacion": 15,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "zucchini grandes"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "tomates maduros"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva extra virgen"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "albahaca fresca"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y orégano"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "levadura nutricional para efecto queso"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Espiralizás los zucchini o hacés tiras largas con pela-papas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sofreís el ajo 1 minuto. Agregás los tomates y cocinás 10 minutos hasta que espese."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Salteás los fideos de zucchini a fuego alto 2-3 minutos. Volcás la salsa y servís con albahaca fresca."
+      }
+    ],
+    "tip_nutricional": "Esta preparación elimina el gluten de la pasta tradicional (relevante para Hashimoto) y reduce la carga de carbohidratos en la cena, favoreciendo el metabolismo nocturno.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/39.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "Cazuela de Pollo con Aceitunas y Limón",
+    "descripcion": "Una cazuela con sabores del Mediterráneo que se hace sola en la olla. Las aceitunas y el aceite de oliva completan el perfil antiinflamatorio.",
+    "categoria": "cena",
+    "tiempo_preparacion": 40,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "kg",
+        "nombre": "muslos de pollo sin piel"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "aceitunas verdes enteras"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón en rodajas finas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "caldo de pollo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "comino"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "cúrcuma"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y perejil fresco"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Dorás el pollo en aceite a fuego alto 3 minutos por lado. Retirás y reservás."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sofreís la cebolla y el ajo 3 minutos. Agregás el comino y la cúrcuma."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volvés el pollo a la olla con el caldo, las aceitunas y el limón. Tapás y cocinás a fuego suave 30 minutos."
+      }
+    ],
+    "tip_nutricional": "Las aceitunas aportan ácido oleico y oleuropeína con propiedades antiinflamatorias y antioxidantes. La cúrcuma suma curcumina con efecto antiinflamatorio sinérgico.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/40.jpg"
+  },
+  {
+    "id": 41,
+    "nombre": "Ensalada Niçoise con Atún y Huevos Duros",
+    "descripcion": "La ensalada completa sin cocción extra. Atún, huevos duros, aceitunas y chauchas con aderezo de mostaza.",
+    "categoria": "cena",
+    "tiempo_preparacion": 20,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "latas",
+        "nombre": "atún al natural (160g c/u)"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "huevos duros"
+      },
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "chauchas cocidas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "puñados",
+        "nombre": "lechuga o mix de hojas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "aceitunas negras"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "tomates"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "mostaza dijon"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "vinagre de vino blanco"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal y pimienta"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Hervís las chauchas 5 minutos al dente. Hacés los huevos duros 10 minutos y pelás."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Preparás el aderezo batiendo el aceite con la mostaza, el vinagre, sal y pimienta."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Armás la ensalada en plato grande con todas las hojas, tomates, chauchas, aceitunas, huevos y el atún encima. Rociás con el aderezo."
+      }
+    ],
+    "tip_nutricional": "Esta ensalada reúne: selenio del atún y los huevos, hierro de las chauchas y las aceitunas, omega-3 del atún y proteína completa del huevo. Una de las cenas más nutricionalmente densas.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/41.jpg"
+  },
+  {
+    "id": 42,
+    "nombre": "Revuelto de Hongos Portobello con Espinaca y Ajo",
+    "descripcion": "Un plato vegetariano de sabor intenso. Los hongos portobello tienen la carnosa satisfacción de la carne. Listo en 12 minutos.",
+    "categoria": "cena",
+    "tiempo_preparacion": 12,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "hongos portobello grandes"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "huevos frescos"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "puñados",
+        "nombre": "espinaca fresca"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "salsa tamari"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y tomillo fresco"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cocinás los hongos en láminas a fuego alto sin revolver 3 minutos. Dorás, revolvés 2 minutos más. Agregás el ajo y el tamari."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sumás la espinaca y cocinás 1 minuto. Condimentás con tomillo."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volcás los huevos batidos y revolvés suavemente integrando con los hongos hasta que queden cremosos."
+      }
+    ],
+    "tip_nutricional": "Los hongos portobello aportan ergotioneína, un antioxidante exclusivo que protege las células del estrés oxidativo. También contienen selenio en formas orgánicas biodisponibles.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": false,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/42.jpg"
+  },
+  {
+    "id": 43,
+    "nombre": "Pechuga de Pollo Rellena con Espinaca y Queso de Cabra",
+    "descripcion": "Una cena elegante en 25 minutos. La pechuga rellena queda jugosa. El queso de cabra es más tolerable que el de vaca.",
+    "categoria": "cena",
+    "tiempo_preparacion": 30,
+    "porciones": 2,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "pechugas de pollo grandes"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "puñados",
+        "nombre": "espinaca fresca"
+      },
+      {
+        "cantidad": "60",
+        "unidad": "g",
+        "nombre": "queso de cabra"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "pimentón ahumado"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta negra y tomillo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Salteás la espinaca con el ajo 2 minutos. Mezclás con el queso de cabra, sal y pimienta."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Abrís un bolsillo en cada pechuga. Rellenás con la mezcla. Condimentás por fuera con sal, pimienta y pimentón."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Sellás en sartén 3 minutos por lado. Terminás en horno 180°C 12-15 minutos. Dejás reposar 5 minutos antes de cortar."
+      }
+    ],
+    "tip_nutricional": "El queso de cabra contiene proteínas de caseína beta-A2 y B, más fáciles de digerir y menos proinflamatorias. Para Hashimoto con sensibilidad láctea, el queso de cabra suele tolerarse mejor.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": false,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/43.jpg"
+  },
+  {
+    "id": 44,
+    "nombre": "Tapa de Asado al Horno con Vegetales Mediterráneos",
+    "descripcion": "El gusto de asado sin el asado. La tapa al horno queda tierna y jugosa. Una cena familiar que se hace sola en el horno.",
+    "categoria": "cena",
+    "tiempo_preparacion": 90,
+    "porciones": 6,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1.2",
+        "unidad": "kg",
+        "nombre": "tapa de asado de novillo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "cebollas en gajos"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "morrones de colores"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "berenjenas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zucchini"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "dientes",
+        "nombre": "ajo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "caldo de res"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal gruesa, pimienta, romero y tomillo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 180°C. Sellás la tapa en sartén caliente con aceite 3 minutos por lado."
+      },
+      {
+        "numero": 2,
+        "descripcion": "En fuente honda, colocás todos los vegetales cortados con el ajo. Rociás con aceite y hierbas. Colocás la tapa sobre los vegetales y volcás el caldo."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Tapás con papel aluminio. Horneás 1 hora 20 minutos. Los últimos 20 minutos retirás el aluminio. Dejás reposar 10 minutos."
+      }
+    ],
+    "tip_nutricional": "La tapa de asado es un corte económico y nutritivo, con zinc, hierro hemínico y creatina. La cocción lenta al horno no genera compuestos tóxicos como la parrilla a fuego directo.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/44.jpg"
+  },
+  {
+    "id": 45,
+    "nombre": "Crema de Zanahoria y Jengibre con Trocitos de Pollo",
+    "descripcion": "Una crema liviana y reconfortante. El jengibre y la zanahoria se complementan con dulzor y picor suave. Con pollo desmenuzado es una cena completa.",
+    "categoria": "cena",
+    "tiempo_preparacion": 30,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "kg",
+        "nombre": "zanahorias"
+      },
+      {
+        "cantidad": "300",
+        "unidad": "g",
+        "nombre": "pechuga de pollo cocida y desmenuzada"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "cebolla"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cm",
+        "nombre": "jengibre fresco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "leche de coco light (200ml)"
+      },
+      {
+        "cantidad": "700",
+        "unidad": "ml",
+        "nombre": "caldo de verduras"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de oliva"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "sal, pimienta y cilantro o perejil"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Sofreís la cebolla en aceite 5 minutos. Agregás las zanahorias en rodajas y el jengibre rallado, cocinás 3 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Sumás el caldo y cocinás 20 minutos. Añadís la leche de coco y mixeás hasta crema homogénea."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Servís la crema con el pollo desmenuzado encima y hierbas frescas."
+      }
+    ],
+    "tip_nutricional": "El betacaroteno de la zanahoria es liposoluble: su absorción se multiplica con la leche de coco y el aceite. La conversión de betacaroteno en vitamina A requiere zinc, aportado por el pollo.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": false,
+    "imagen_url": "/recetas/45.jpg"
+  },
+  {
+    "id": 46,
+    "nombre": "Mousse de Chocolate Negro y Palta",
+    "descripcion": "Cremoso, rico y sin culpa. La palta crea textura aterciopelada. El chocolate negro al 85% tiene flavonoides antioxidantes. Tarda 10 minutos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 10,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "paltas maduras grandes"
+      },
+      {
+        "cantidad": "80",
+        "unidad": "g",
+        "nombre": "chocolate negro 85% cacao derretido"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "cacao en polvo sin azúcar"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura o sirope de arce"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal marina"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "frambuesas o menta fresca para decorar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Pelás las paltas y las colocás en procesadora. Agregás el chocolate derretido, el cacao, la miel, la vainilla y la sal."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Procesás 2-3 minutos hasta obtener una mousse completamente lisa."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Distribuís en copas. Refrigerás mínimo 30 minutos. Decorás antes de servir."
+      }
+    ],
+    "tip_nutricional": "El chocolate negro al 85% aporta flavonoides que reducen el estrés oxidativo elevado en condiciones tiroideas autoinmunes.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/46.jpg"
+  },
+  {
+    "id": 47,
+    "nombre": "Cookies de Avena y Banana sin Azúcar",
+    "descripcion": "Las galletas más simples del mundo con solo 3 ingredientes base. Dulces naturalmente con la banana. Se hornean en 12 minutos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 20,
+    "porciones": 12,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "bananas muy maduras"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "tazas",
+        "nombre": "avena arrollada sin gluten"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "arándanos secos o chips de chocolate negro"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 180°C. Aplastás bien las bananas hasta puré liso."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Mezclás el puré con la avena, el aceite de coco, la canela, la vainilla y la sal."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Formás 12 bolitas y las aplastás sobre placa con papel manteca. Horneás 12-14 minutos hasta que los bordes estén dorados. Dejás enfriar completamente."
+      }
+    ],
+    "tip_nutricional": "La avena aporta betaglucano, fibra soluble que contribuye al equilibrio glucémico, relevante en hipotiroidismo.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/47.jpg"
+  },
+  {
+    "id": 48,
+    "nombre": "Panna Cotta de Leche de Coco con Coulis de Frutos Rojos",
+    "descripcion": "La versión sin lácteos de este postre italiano cremoso. Un postre de presentación impresionante que tarda 15 minutos de preparación.",
+    "categoria": "postre",
+    "tiempo_preparacion": 15,
+    "porciones": 4,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "latas",
+        "nombre": "leche de coco full fat (400ml c/u)"
+      },
+      {
+        "cantidad": "7",
+        "unidad": "g",
+        "nombre": "gelatina sin sabor (1 sobre)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "frutos rojos (frutillas, arándanos, frambuesas)"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "miel para el coulis"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "jugo de limón"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Hidratás la gelatina en 3 cdas de agua fría 5 minutos. Calentás la leche de coco con la miel y la vainilla hasta casi hervir. Retirás del fuego."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Incorporás la gelatina y revolvés hasta disolver. Distribuís en 4 moldes o vasos. Refrigerás mínimo 3 horas."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Para el coulis: cocinás los frutos rojos con la miel y el limón 8 minutos hasta espesar. Servís la panna cotta con el coulis encima."
+      }
+    ],
+    "tip_nutricional": "Los frutos rojos contienen antocianinas que reducen el estrés oxidativo crónico elevado en Hashimoto. La leche de coco aporta ácido láurico con propiedades antiinflamatorias.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/48.jpg"
+  },
+  {
+    "id": 49,
+    "nombre": "Torta de Banana y Harina de Almendras",
+    "descripcion": "Una torta húmeda sin harina de trigo ni azúcar refinada. Dulce naturalmente con la banana. Dura una semana en heladera.",
+    "categoria": "postre",
+    "tiempo_preparacion": 50,
+    "porciones": 10,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "bananas muy maduras"
+      },
+      {
+        "cantidad": "2.5",
+        "unidad": "tazas",
+        "nombre": "harina de almendras"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1.5",
+        "unidad": "cditas",
+        "nombre": "polvo para hornear sin gluten"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 175°C. Engrasás un molde de 22cm con aceite de coco."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Aplastás las bananas hasta puré. Mezclás con los huevos, el aceite, la miel y la vainilla. Incorporás los secos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volcás en el molde. Horneás 35-40 minutos. Dejás enfriar completamente antes de cortar."
+      }
+    ],
+    "tip_nutricional": "La harina de almendras tiene índice glucémico muy bajo, no genera el pico de insulina de las harinas de trigo. Aporta vitamina E, magnesio y proteínas.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/49.jpg"
+  },
+  {
+    "id": 50,
+    "nombre": "Helado Casero de Mango y Coco (3 ingredientes)",
+    "descripcion": "Un helado cremoso y tropical sin azúcar añadida, sin lácteos. Solo mango congelado, leche de coco y vainilla. Lista en 5 minutos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 5,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "mango congelado en cubos"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "lata",
+        "nombre": "leche de coco full fat (200ml)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "miel (opcional)"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "coco rallado sin azúcar para decorar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "El mango debe estar completamente congelado en cubos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Colocás el mango en procesadora potente con la leche de coco, la vainilla y la miel."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Procesás 3-4 minutos raspando los bordes hasta textura cremosa de helado. Servís de inmediato o congelás 1 hora para textura más firme."
+      }
+    ],
+    "tip_nutricional": "Este helado no tiene azúcar refinada ni grasas trans. El mango aporta betacaroteno y vitamina C. Para hipertiroidismo, es uno de los postres más seguros.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/50.jpg"
+  },
+  {
+    "id": 51,
+    "nombre": "Brownies de Batata y Cacao Sin Harina",
+    "descripcion": "Los brownies más nutritivos. La batata da humedad y dulzor natural, el cacao aporta flavonoides antioxidantes. Textura fudgy increíble.",
+    "categoria": "postre",
+    "tiempo_preparacion": 45,
+    "porciones": 12,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "300",
+        "unidad": "g",
+        "nombre": "batata cocida y aplastada"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "cacao en polvo sin azúcar"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "huevos"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "taza",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "polvo para hornear sin gluten"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "chips de chocolate negro 85%"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 175°C. Engrasás un molde cuadrado de 20x20cm."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Mezclás la batata aplastada con los huevos, la miel, el aceite y la vainilla. Incorporás el cacao, el polvo para hornear y la sal."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volcás en el molde. Horneás 25-28 minutos. El palillo debe salir con pocas migas húmedas. Dejás enfriar completamente antes de cortar."
+      }
+    ],
+    "tip_nutricional": "La batata aporta betacaroteno y potasio junto con fibra que reduce el índice glucémico total. El cacao puro contiene flavanoles que mejoran la sensibilidad a la insulina.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/51.jpg"
+  },
+  {
+    "id": 52,
+    "nombre": "Compota Caliente de Pera y Canela con Granola",
+    "descripcion": "Las peras cocidas se caramelizan en sus propios azúcares naturales con canela. Servido caliente con granola crujiente encima.",
+    "categoria": "postre",
+    "tiempo_preparacion": 15,
+    "porciones": 3,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "peras maduras firmes"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "cdita",
+        "nombre": "jengibre en polvo"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "jugo de limón"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "taza",
+        "nombre": "agua"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "granola sin azúcar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Pelás y cortás las peras en cubos. Las colocás en una ollita con el agua, la miel, el limón, la canela y el jengibre."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cocinás a fuego medio 10-12 minutos hasta que las peras estén tiernas y el líquido se reduzca."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Servís caliente con la granola crujiente espolvoreada encima."
+      }
+    ],
+    "tip_nutricional": "La pera cocida aporta pectina, fibra soluble que ayuda a regular el tránsito intestinal frecuentemente afectado en hipotiroidismo. La canela puede ayudar con la sensibilidad a la insulina.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/52.jpg"
+  },
+  {
+    "id": 53,
+    "nombre": "Cheesecake Crudo de Anacardos y Limón",
+    "descripcion": "Un cheesecake sin queso, sin cocción y sin gluten que sorprende con su textura cremosa. Los anacardos remojados crean una base perfecta.",
+    "categoria": "postre",
+    "tiempo_preparacion": 30,
+    "porciones": 8,
+    "nivel_dificultad": "avanzado",
+    "ingredientes": [
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "anacardos crudos remojados 4 horas"
+      },
+      {
+        "cantidad": "150",
+        "unidad": "g",
+        "nombre": "dátiles medjool sin carozo"
+      },
+      {
+        "cantidad": "100",
+        "unidad": "g",
+        "nombre": "nueces"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "limones (jugo y ralladura)"
+      },
+      {
+        "cantidad": "100",
+        "unidad": "ml",
+        "nombre": "leche de coco full fat"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "frutos rojos para decorar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Base: procesás las nueces con los dátiles hasta que se pegue sola. Presionás en el fondo de un molde desmontable de 18cm. Refrigerás."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Relleno: procesás los anacardos escurridos con la leche de coco, el aceite, la miel, el limón y la vainilla hasta crema totalmente lisa (5 minutos)."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volcás el relleno sobre la base. Congelás 4 horas mínimo. Para servir, sacás del freezer 15 minutos antes y decorás con frutos rojos."
+      }
+    ],
+    "tip_nutricional": "Los anacardos son ricos en magnesio y zinc. Los dátiles endulzan naturalmente con fibra incluida. Este postre es completamente libre de gluten, lácteos y azúcar refinada.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/53.jpg"
+  },
+  {
+    "id": 54,
+    "nombre": "Manzanas Asadas con Canela y Nueces",
+    "descripcion": "El postre más simple y subestimado. Las manzanas asadas se caramelizan en sus propios azúcares. 5 minutos de preparación y el horno hace todo.",
+    "categoria": "postre",
+    "tiempo_preparacion": 35,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "manzanas rojas medianas"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "nueces picadas"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cditas",
+        "nombre": "canela en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de coco"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "taza",
+        "nombre": "agua o jugo de naranja"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 180°C. Sacás el corazón de las manzanas sin atravesar la base."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Mezclás las nueces con la miel, la canela, la vainilla y el aceite de coco. Rellenás cada manzana."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Colocás en fuente con agua en el fondo. Horneás 25-30 minutos hasta que estén tiernas y caramelizadas."
+      }
+    ],
+    "tip_nutricional": "Las manzanas cocidas aportan pectina de alta concentración que actúa como prebiótico alimentando la microbiota intestinal. Para Hashimoto, el equilibrio de la microbiota está directamente ligado a la modulación autoinmune.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/54.jpg"
+  },
+  {
+    "id": 55,
+    "nombre": "Budín de Arroz con Leche de Coco y Cardamomo",
+    "descripcion": "La versión sin lácteos del arroz con leche de siempre. La leche de coco le da cremosidad aún mejor y el cardamomo un perfume delicado.",
+    "categoria": "postre",
+    "tiempo_preparacion": 35,
+    "porciones": 4,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "arroz blanco de grano corto"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "leche de coco full fat (400ml)"
+      },
+      {
+        "cantidad": "400",
+        "unidad": "ml",
+        "nombre": "agua"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "cdita",
+        "nombre": "cardamomo en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      },
+      {
+        "cantidad": "al gusto",
+        "unidad": "",
+        "nombre": "canela en polvo para servir"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Lavás el arroz hasta que el agua salga clara. Cocinás en olla con el agua y la sal 10 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Agregás la leche de coco, la miel, la vainilla y el cardamomo. Cocinás a fuego suave revolviendo 15-20 minutos."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Servís caliente con canela, o refrigerás para textura más firme."
+      }
+    ],
+    "tip_nutricional": "Este postre clásico sin lácteos es una buena opción para personas con sensibilidad a la caseína. El cardamomo tiene propiedades digestivas y antiinflamatorias.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/55.jpg"
+  },
+  {
+    "id": 56,
+    "nombre": "Parfait de Frutas con Yogur de Almendras y Semillas",
+    "descripcion": "Un postre tan fresco y colorido que también funciona de desayuno. Capas de color y textura que se arman en 5 minutos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 5,
+    "porciones": 2,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "400",
+        "unidad": "g",
+        "nombre": "yogur de almendras o coco sin azúcar"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "frutillas frescas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "arándanos frescos"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "kiwi"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "semillas de chía"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "semillas de girasol tostadas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "miel (opcional)"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "granola sin azúcar"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Cortás las frutillas en cuartos y el kiwi en rodajas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "En vasos o copas altas armás las capas: yogur → frutas → yogur → frutas. Terminás con yogur arriba."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Espolvoreás las semillas de chía y girasol. Rociás con miel y agregás granola si querés."
+      }
+    ],
+    "tip_nutricional": "Las semillas de chía aportan omega-3 ALA, calcio y magnesio. Las frutillas y el kiwi tienen alta concentración de vitamina C que favorece la absorción del hierro de las semillas.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/56.jpg"
+  },
+  {
+    "id": 57,
+    "nombre": "Trufas de Chocolate y Dátiles con Coco Rallado",
+    "descripcion": "Bolitas de energía que funcionan como postre o snack. Se preparan en 10 minutos y se conservan una semana en heladera.",
+    "categoria": "postre",
+    "tiempo_preparacion": 10,
+    "porciones": 16,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "dátiles medjool sin carozo"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "almendras crudas"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "cdas",
+        "nombre": "cacao en polvo sin azúcar"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal marina"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "coco rallado sin azúcar"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "1 pizca de canela o cardamomo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Procesás las almendras hasta harina gruesa. Agregás los dátiles, el cacao, la vainilla y la sal. Procesás hasta que se forme una pasta que se pegue."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Si la mezcla está muy seca, agregás 1 cda de agua. Formás 16 bolitas con las manos húmedas."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Rebozás cada una en coco rallado. Refrigerás 30 minutos."
+      }
+    ],
+    "tip_nutricional": "Los dátiles endulzan naturalmente con potasio, magnesio y fibra. Las almendras suman vitamina E, magnesio y calcio. El cacao puro tiene flavanoles antioxidantes.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/57.jpg"
+  },
+  {
+    "id": 58,
+    "nombre": "Tarta de Limón con Base de Almendras Sin Cocción",
+    "descripcion": "Una tarta fresca y ácida sin horno. La crema de limón con palta queda sedosa y vibrante. Parece de pastelería artesanal.",
+    "categoria": "postre",
+    "tiempo_preparacion": 20,
+    "porciones": 8,
+    "nivel_dificultad": "medio",
+    "ingredientes": [
+      {
+        "cantidad": "200",
+        "unidad": "g",
+        "nombre": "almendras crudas"
+      },
+      {
+        "cantidad": "150",
+        "unidad": "g",
+        "nombre": "dátiles sin carozo"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "paltas maduras"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "unidades",
+        "nombre": "limones (jugo y ralladura)"
+      },
+      {
+        "cantidad": "3",
+        "unidad": "cdas",
+        "nombre": "miel pura"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "aceite de coco derretido"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "sal"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Base: procesás las almendras hasta harina. Agregás los dátiles y procesás hasta pasta pegajosa. Presionás en molde redondo de 22cm. Refrigerás."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Relleno: procesás las paltas con el jugo de limón, la ralladura, la miel, el aceite, la vainilla y la sal hasta crema completamente lisa."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Volcás el relleno sobre la base. Refrigerás mínimo 2 horas. Decorás con rodajas de limón y menta."
+      }
+    ],
+    "tip_nutricional": "El limón aporta vitamina C y d-limoneno, un compuesto con efecto detoxificante hepático que apoya el metabolismo de las hormonas tiroideas en el hígado.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/58.jpg"
+  },
+  {
+    "id": 59,
+    "nombre": "Sorbete de Frutilla y Jengibre Sin Azúcar",
+    "descripcion": "Un sorbete refrescante que solo necesita frutillas congeladas y jengibre. Sin azúcar, sin nada artificial. Listo en 5 minutos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 5,
+    "porciones": 3,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "3",
+        "unidad": "tazas",
+        "nombre": "frutillas congeladas"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "jengibre fresco rallado"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "jugo de limón"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "miel (opcional)"
+      },
+      {
+        "cantidad": "opcional",
+        "unidad": "",
+        "nombre": "hojas de menta fresca"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Las frutillas deben estar completamente congeladas."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Procesás las frutillas con el jengibre, el jugo de limón y la miel. Si la procesadora cuesta, agregás 1-2 cdas de agua."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Procesás 1-2 minutos hasta textura suave. Servís de inmediato o congelás 30 minutos para textura más firme."
+      }
+    ],
+    "tip_nutricional": "Las frutillas son una de las frutas más ricas en vitamina C y antocianinas. El gingerol del jengibre fresco tiene propiedades antiinflamatorias y analgésicas naturales.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true,
+    "imagen_url": "/recetas/59.jpg"
+  },
+  {
+    "id": 60,
+    "nombre": "Pavlova de Merengue con Frutos Rojos y Crema de Coco",
+    "descripcion": "La reina de los postres argentinos en versión sin lácteos. Merengue naturalmente sin gluten con crema batida de coco y frutos rojos frescos.",
+    "categoria": "postre",
+    "tiempo_preparacion": 90,
+    "porciones": 8,
+    "nivel_dificultad": "avanzado",
+    "ingredientes": [
+      {
+        "cantidad": "4",
+        "unidad": "unidades",
+        "nombre": "claras de huevo a temperatura ambiente"
+      },
+      {
+        "cantidad": "3/4",
+        "unidad": "taza",
+        "nombre": "azúcar impalpable"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "vinagre blanco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "extracto de vainilla"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "lata",
+        "nombre": "leche de coco full fat refrigerada 24 hs"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "tazas",
+        "nombre": "mix de frutos rojos frescos"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "miel"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cda",
+        "nombre": "jugo de limón"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Precalentás el horno a 130°C. Batís las claras a punto nieve firme. Incorporás el azúcar de a cucharadas sin dejar de batir hasta merengue brillante. Agregás el vinagre y la vainilla."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Volcás sobre placa con papel manteca formando un disco de 22cm. Horneás 70 minutos sin abrir el horno. Apagás y dejás enfriar adentro completamente."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Para la crema de coco: abrís la lata refrigerada, tomás solo la parte sólida y la batís con la miel hasta crema. Distribuís sobre el merengue frío y colocás los frutos rojos con limón."
+      }
+    ],
+    "tip_nutricional": "La pavlova es naturalmente sin gluten y sin lácteos si se usa crema de coco. Para Hashimoto, eliminar el gluten y los lácteos en ocasiones especiales es importante. Los frutos rojos suman antocianinas y vitamina C.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": false,
+    "vegetariana": true,
+    "imagen_url": "/recetas/60.jpg"
+  },
+  {
+    "id": 61,
+    "nombre": "Jugo Verde Clásico para Tiroides",
+    "descripcion": "El clásico jugo verde que cuida tu tiroides. Espinaca, pepino, apio y limón — depurativo, antiinflamatorio, listo en 5 minutos. Ideal para empezar el día.",
+    "categoria": "jugo",
+    "tiempo_preparacion": 5,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "puñado",
+        "nombre": "espinaca fresca"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "pepino"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "tallos",
+        "nombre": "apio"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón (jugo)"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "vaso",
+        "nombre": "agua fría"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "jengibre fresco rallado"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Lavás bien la espinaca y el pepino."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Cortás en trozos el pepino y el apio."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Licuás todo junto con el agua fría y el jugo de limón."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Colás si preferís y tomás enseguida."
+      }
+    ],
+    "tip_nutricional": "La espinaca aporta hierro y folato esenciales para la función tiroidea. El pepino hidrata y tiene efecto antiinflamatorio. El limón favorece la absorción del hierro.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true
+  },
+  {
+    "id": 62,
+    "nombre": "Jugo Antiinflamatorio de Remolacha y Jengibre",
+    "descripcion": "Profundamente antiinflamatorio. La remolacha mejora la circulación y aporta betaína, el jengibre baja la inflamación. Color intenso, sabor dulce y picante.",
+    "categoria": "jugo",
+    "tiempo_preparacion": 8,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "remolacha mediana cruda"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "unidades",
+        "nombre": "zanahorias"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "manzana verde"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cm",
+        "nombre": "jengibre fresco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "limón (jugo)"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Pelás la remolacha y las zanahorias, cortás en trozos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Pasás por la licuadora o extractor con el jengibre y la manzana."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Agregás el jugo de limón, revolvés y tomás enseguida."
+      }
+    ],
+    "tip_nutricional": "La remolacha contiene betaína que favorece la metilación, proceso clave en Hashimoto. El jengibre inhibe la producción de citoquinas proinflamatorias. Tomalo con el estómago vacío para mejor absorción.",
+    "apta_hipo": true,
+    "apta_hiper": false,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true
+  },
+  {
+    "id": 63,
+    "nombre": "Batido de Mango, Cúrcuma y Leche de Coco",
+    "descripcion": "Cremoso, tropical y antiinflamatorio. La cúrcuma con pimienta negra es la combinación más poderosa para reducir la inflamación. Sabe a verano.",
+    "categoria": "jugo",
+    "tiempo_preparacion": 5,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "mango maduro en cubos"
+      },
+      {
+        "cantidad": "200",
+        "unidad": "ml",
+        "nombre": "leche de coco"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "cúrcuma en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "pimienta negra molida"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "miel pura (opcional)"
+      },
+      {
+        "cantidad": "4",
+        "unidad": "cubos",
+        "nombre": "hielo"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Ponés todos los ingredientes en la licuadora."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Licuás hasta obtener una textura cremosa y pareja."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Servís con hielo extra si querés más fresco."
+      }
+    ],
+    "tip_nutricional": "La curcumina de la cúrcuma es el antiinflamatorio natural más estudiado para enfermedades autoinmunes como Hashimoto. La pimienta negra multiplica su absorción 20 veces. El mango aporta vitamina C que apoya la producción de hormonas tiroideas.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true
+  },
+  {
+    "id": 64,
+    "nombre": "Agua con Limón y Cúrcuma",
+    "descripcion": "El ritual matutino definitivo para tu tiroides. Solo 3 ingredientes, 3 minutos, y arrancás el día con el sistema digestivo activado y la inflamación a raya.",
+    "categoria": "jugo",
+    "tiempo_preparacion": 3,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "250",
+        "unidad": "ml",
+        "nombre": "agua tibia"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "unidad",
+        "nombre": "limón (jugo)"
+      },
+      {
+        "cantidad": "1/4",
+        "unidad": "cdita",
+        "nombre": "cúrcuma en polvo"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "pizca",
+        "nombre": "pimienta negra molida"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Calentás el agua a temperatura tibia (no hirviendo)."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Exprimís el limón y agregás al agua."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Disolvés la cúrcuma con la pizca de pimienta."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Tomás en ayunas, 30 minutos antes de desayunar."
+      }
+    ],
+    "tip_nutricional": "Tomado en ayunas, el limón estimula la producción de bilis y el vaciado del hígado. La cúrcuma con pimienta activa la curcumina antes de que llegue algo de comida que interfiera con su absorción. Ideal antes de tomar la medicación tiroidea.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true
+  },
+  {
+    "id": 65,
+    "nombre": "Licuado de Semillas de Chía y Frutas Rojas",
+    "descripcion": "Espeso, nutritivo y antiinflamatorio. Las semillas de chía aportan omega-3, las frutas rojas antioxidantes. Una combinación ganadora para la tiroides.",
+    "categoria": "jugo",
+    "tiempo_preparacion": 8,
+    "porciones": 1,
+    "nivel_dificultad": "facil",
+    "ingredientes": [
+      {
+        "cantidad": "1",
+        "unidad": "taza",
+        "nombre": "leche de almendras sin azúcar"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "frutillas frescas o congeladas"
+      },
+      {
+        "cantidad": "1/2",
+        "unidad": "taza",
+        "nombre": "arándanos"
+      },
+      {
+        "cantidad": "2",
+        "unidad": "cdas",
+        "nombre": "semillas de chía"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "unidad",
+        "nombre": "banana mediana"
+      },
+      {
+        "cantidad": "1",
+        "unidad": "cdita",
+        "nombre": "miel pura (opcional)"
+      }
+    ],
+    "pasos": [
+      {
+        "numero": 1,
+        "descripcion": "Hidratás las semillas de chía en la leche de almendras durante 5 minutos."
+      },
+      {
+        "numero": 2,
+        "descripcion": "Agregás las frutas rojas y la banana en la licuadora."
+      },
+      {
+        "numero": 3,
+        "descripcion": "Vertís la leche con chía y licuás hasta lograr cremosidad."
+      },
+      {
+        "numero": 4,
+        "descripcion": "Tomás enseguida o guardás hasta 24hs en la heladera."
+      }
+    ],
+    "tip_nutricional": "Las semillas de chía son fuente vegetal de omega-3 ALA, que el cuerpo convierte parcialmente en EPA/DHA antiinflamatorios. Las frutas rojas tienen antocianinas que protegen la glándula tiroidea del daño oxidativo. Alto contenido de fibra soluble que alimenta la microbiota intestinal.",
+    "apta_hipo": true,
+    "apta_hiper": true,
+    "apta_hashimoto": true,
+    "sin_gluten": true,
+    "sin_lacteos": true,
+    "sin_soja": true,
+    "sin_azucar": true,
+    "vegetariana": true
+  }
+]
