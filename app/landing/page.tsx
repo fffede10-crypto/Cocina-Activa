@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-const CHECKOUT_URL = '#CHECKOUT_URL';
+const CHECKOUT_URL = 'https://agoraeducacion.store/cart/53159708557591:1';
 const DURACION_CONTADOR = 23 * 3600 + 59 * 60 + 59;
 
 const COMPRAS_RECIENTES = [
