@@ -114,6 +114,39 @@ const TESTIMONIOS = [
 ];
 
 
+const slides = [
+  {
+    img: '/screenshots/dashboard-accesos.jpg',
+    titulo: 'Tu dashboard personalizado',
+    descripcion: 'Receta del día según tu condición, badge de hipotiroidismo/Hashimoto/hiper y accesos rápidos.',
+  },
+  {
+    img: '/screenshots/recetas-grid.jpg',
+    titulo: 'Biblioteca de 65 recetas',
+    descripcion: 'Filtradas por tu condición — hipotiroidismo, Hashimoto o hipertiroidismo. Con filtros y búsqueda.',
+  },
+  {
+    img: '/screenshots/receta-del-dia.jpg',
+    titulo: 'Receta del día con imagen real',
+    descripcion: 'Cada día una receta diferente con foto apetitosa y un mensaje personalizado para tu tiroides.',
+  },
+  {
+    img: '/screenshots/receta-ingredientes.jpg',
+    titulo: 'Ingredientes con un toque a la lista',
+    descripcion: 'Tocás "+" en cualquier ingrediente y lo agregás directo a tu lista de compras del súper.',
+  },
+  {
+    img: '/screenshots/receta-pasos.jpg',
+    titulo: 'Paso a paso y tip nutricional',
+    descripcion: 'Cada receta tiene el paso a paso detallado y un tip nutricional específico para tu condición.',
+  },
+  {
+    img: '/screenshots/guia-alimentos.jpg',
+    titulo: 'Guía de alimentos verde/amarillo/rojo',
+    descripcion: 'Qué comer, qué moderar y qué evitar — con la razón nutricional específica para tu tiroides.',
+  },
+];
+
 const PASOS = [
   { num: '1', titulo: 'Comprás el acceso', desc: 'Pago único seguro. Sin suscripciones.' },
   { num: '2', titulo: 'Nos escribís por WhatsApp', desc: 'Con tu nombre y email para activar tu cuenta.' },
@@ -151,6 +184,7 @@ export default function LandingPage() {
   const [tiempo, setTiempo] = useState('23:59:59');
   const [faqAbierto, setFaqAbierto] = useState<number | null>(null);
   const [popup, setPopup] = useState<{ nombre: string; ciudad: string; condicion: string; hace: number } | null>(null);
+  const [slideActivo, setSlideActivo] = useState(0);
 
   useEffect(() => {
     let restante = parseInt(localStorage.getItem('tiroides_timer') ?? String(DURACION_CONTADOR));
@@ -184,6 +218,13 @@ export default function LandingPage() {
     const interval = setInterval(mostrar, 45000);
     return () => { clearTimeout(t1); clearInterval(interval); };
   }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSlideActivo(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [slideActivo]);
 
   return (
     <div className="font-sans text-stone-900 overflow-x-hidden">
@@ -290,48 +331,6 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-8 mt-10">
-            {/* Frame de celular */}
-            <div className="w-full md:w-1/2 max-w-[280px] mx-auto md:mx-0 flex-shrink-0">
-              <div className="bg-[#1B4332] rounded-t-3xl px-3 py-2 flex items-center gap-2">
-                <div className="flex gap-1">
-                  <div className="w-2 h-2 rounded-full bg-red-400" />
-                  <div className="w-2 h-2 rounded-full bg-yellow-400" />
-                  <div className="w-2 h-2 rounded-full bg-green-400" />
-                </div>
-                <div className="flex-1 bg-white/10 rounded text-center">
-                  <span className="text-[9px] text-green-300">tiroides activa</span>
-                </div>
-              </div>
-              <div className="border-2 border-t-0 border-[#1B4332] rounded-b-3xl overflow-hidden">
-                <Image
-                  src="/screenshots/dashboard-accesos.jpg"
-                  alt="Dashboard Tiroides Activa"
-                  width={280}
-                  height={490}
-                  className="w-full"
-                />
-              </div>
-            </div>
-
-            {/* Texto */}
-            <div className="w-full md:w-1/2">
-              <p className="font-semibold text-[#1B4332] text-lg mb-3">Tu espacio personalizado</p>
-              <ul className="space-y-3">
-                {[
-                  'Receta del día según tu condición tiroidea',
-                  'Tu badge: Hipotiroidismo, Hiper o Hashimoto',
-                  'Ritual de mañana con jugos antiinflamatorios',
-                  'Accesos rápidos a recetas, guía y lista',
-                ].map(item => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-stone-600">
-                    <span className="w-5 h-5 rounded-full bg-[#1B4332] text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -362,15 +361,6 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="mt-8 max-w-[300px] mx-auto">
-            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
-              <span className="text-[10px] text-green-300">📖 Biblioteca de recetas</span>
-            </div>
-            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
-              <Image src="/screenshots/recetas-grid.jpg" alt="65 recetas organizadas" width={300} height={500} className="w-full" />
-            </div>
-            <p className="text-center text-xs text-stone-500 mt-2">Así se ven tus 65 recetas con filtros</p>
-          </div>
         </div>
       </section>
 
@@ -393,15 +383,6 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-8 max-w-[300px] mx-auto">
-            <div className="bg-orange-500 rounded-t-2xl px-3 py-1.5 text-center">
-              <span className="text-[10px] text-white font-semibold">✨ Receta del día</span>
-            </div>
-            <div className="border-2 border-t-0 border-orange-500 rounded-b-2xl overflow-hidden">
-              <Image src="/screenshots/receta-del-dia.jpg" alt="Receta del día personalizada" width={300} height={520} className="w-full" />
-            </div>
-            <p className="text-center text-xs text-stone-500 mt-2">Mensaje personalizado según tu condición</p>
-          </div>
         </div>
       </section>
 
@@ -425,19 +406,108 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-10 max-w-[300px] mx-auto">
-            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
-              <span className="text-[10px] text-green-300">🛒 Lista de compras inteligente</span>
+        </div>
+      </section>
+
+      {/* ===== 8. SLIDER — así se ve la plataforma ===== */}
+      <section className="py-16 px-5 bg-white">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-xs font-bold tracking-widest text-orange-500 uppercase mb-3 text-center">
+            Así se ve por dentro
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl text-[#1B4332] text-center mb-3 leading-tight">
+            Una plataforma real, no un PDF
+          </h2>
+          <p className="text-stone-500 text-center text-base mb-10 leading-relaxed">
+            Navegá por las pantallas y conocé todo lo que tenés disponible desde el primer día.
+          </p>
+
+          {/* Frame de celular */}
+          <div className="max-w-[300px] mx-auto">
+            <div className="bg-[#1B4332] rounded-t-3xl px-4 py-2 flex items-center justify-between">
+              <div className="flex gap-1.5">
+                <div className="w-2 h-2 rounded-full bg-red-400" />
+                <div className="w-2 h-2 rounded-full bg-yellow-400" />
+                <div className="w-2 h-2 rounded-full bg-green-400" />
+              </div>
+              <span className="text-[10px] text-green-300 font-medium">Tiroides Activa</span>
+              <div className="w-12" />
             </div>
-            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
-              <Image src="/screenshots/receta-ingredientes.jpg" alt="Agregar ingredientes a lista de compras" width={300} height={520} className="w-full" />
+
+            <div className="border-x-2 border-[#1B4332] overflow-hidden bg-[#FAFAF7]" style={{ minHeight: '520px' }}>
+              <Image
+                key={slideActivo}
+                src={slides[slideActivo].img}
+                alt={slides[slideActivo].titulo}
+                width={300}
+                height={560}
+                className="w-full transition-opacity duration-300"
+              />
             </div>
-            <p className="text-center text-xs text-stone-500 mt-2">Tocás "+" y el ingrediente va directo a tu lista</p>
+
+            <div className="bg-[#1B4332] rounded-b-3xl px-4 py-3 flex items-center justify-center gap-6">
+              {['🏠', '📖', '✨', '⭐', '🛒', '👤'].map((icon, i) => (
+                <span key={i} className="text-lg opacity-70">{icon}</span>
+              ))}
+            </div>
+          </div>
+
+          {/* Descripción del slide */}
+          <div className="mt-6 text-center max-w-xs mx-auto min-h-[72px]">
+            <p className="font-semibold text-[#1B4332] text-base mb-1">{slides[slideActivo].titulo}</p>
+            <p className="text-stone-500 text-sm leading-relaxed">{slides[slideActivo].descripcion}</p>
+          </div>
+
+          {/* Dots */}
+          <div className="flex items-center justify-center gap-2 mt-5">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setSlideActivo(i)}
+                className={`rounded-full transition-all duration-200 ${
+                  i === slideActivo
+                    ? 'w-6 h-2.5 bg-[#1B4332]'
+                    : 'w-2.5 h-2.5 bg-green-100 hover:bg-green-300'
+                }`}
+                aria-label={`Ver pantalla ${i + 1}`}
+              />
+            ))}
+          </div>
+
+          {/* Flechas */}
+          <div className="flex items-center justify-center gap-4 mt-4">
+            <button
+              onClick={() => setSlideActivo(prev => (prev === 0 ? slides.length - 1 : prev - 1))}
+              className="w-10 h-10 rounded-full border-2 border-[#1B4332] text-[#1B4332] flex items-center justify-center text-lg font-bold hover:bg-[#1B4332] hover:text-white transition-colors"
+              aria-label="Anterior"
+            >
+              ←
+            </button>
+            <span className="text-sm text-stone-500 tabular-nums">{slideActivo + 1} / {slides.length}</span>
+            <button
+              onClick={() => setSlideActivo(prev => (prev === slides.length - 1 ? 0 : prev + 1))}
+              className="w-10 h-10 rounded-full border-2 border-[#1B4332] text-[#1B4332] flex items-center justify-center text-lg font-bold hover:bg-[#1B4332] hover:text-white transition-colors"
+              aria-label="Siguiente"
+            >
+              →
+            </button>
+          </div>
+
+          {/* CTA */}
+          <div className="mt-8 text-center">
+            <a
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-base px-8 py-4 rounded-full transition-colors shadow-lg shadow-orange-200"
+            >
+              🌿 Quiero acceder a la plataforma →
+            </a>
           </div>
         </div>
       </section>
 
-      {/* ===== 8. TESTIMONIOS ===== */}
+      {/* ===== 9. TESTIMONIOS ===== */}
       <section className="bg-[#FAFAF7] py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
@@ -466,19 +536,10 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-10 max-w-[300px] mx-auto">
-            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
-              <span className="text-[10px] text-green-300">🟢 Guía de alimentos</span>
-            </div>
-            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
-              <Image src="/screenshots/guia-alimentos.jpg" alt="Guía de alimentos verde amarillo rojo" width={300} height={520} className="w-full" />
-            </div>
-            <p className="text-center text-xs text-stone-500 mt-2">Verde / Amarillo / Rojo — con razón nutricional</p>
-          </div>
         </div>
       </section>
 
-      {/* ===== 9. CONTADOR PERSONAS ===== */}
+      {/* ===== 10. CONTADOR PERSONAS ===== */}
       <section className="bg-[#1B4332] py-14 px-4 text-center text-white">
         <p className="font-serif text-6xl md:text-7xl font-bold text-orange-400 mb-2">+500</p>
         <p className="text-xl text-white/80">mujeres ya están usando Tiroides Activa</p>
