@@ -295,13 +295,13 @@ export default function LandingPage() {
             lista de compras con un clic.
           </p>
 
-          <div className="max-w-[340px] mx-auto my-6 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+          <div className="max-w-2xl mx-auto my-8 px-4">
             <Image
-              src="/screenshots/plataforma-hero.jpg"
-              alt="Tiroides Activa — plataforma por dentro"
-              width={340}
-              height={600}
-              className="w-full"
+              src="/mockup-plataforma.png"
+              alt="Tiroides Activa — plataforma de recetas"
+              width={800}
+              height={500}
+              className="w-full drop-shadow-2xl rounded-xl"
               priority
             />
           </div>
@@ -448,7 +448,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== 8. SLIDER — así se ve la plataforma ===== */}
+      {/* ===== 8. MOCKUP PLATAFORMA ===== */}
       <section className="py-16 px-5 bg-white">
         <div className="max-w-2xl mx-auto">
           <p className="text-xs font-bold tracking-widest text-orange-500 uppercase mb-3 text-center">
@@ -457,82 +457,21 @@ export default function LandingPage() {
           <h2 className="font-serif text-3xl md:text-4xl text-[#1B4332] text-center mb-3 leading-tight">
             Una plataforma real, no un PDF
           </h2>
-          <p className="text-stone-500 text-center text-base mb-10 leading-relaxed">
+          <p className="text-stone-500 text-center text-base mb-8 leading-relaxed">
             Navegá por las pantallas y conocé todo lo que tenés disponible desde el primer día.
           </p>
 
-          {/* Frame de celular */}
-          <div className="max-w-[300px] mx-auto">
-            <div className="bg-[#1B4332] rounded-t-3xl px-4 py-2 flex items-center justify-between">
-              <div className="flex gap-1.5">
-                <div className="w-2 h-2 rounded-full bg-red-400" />
-                <div className="w-2 h-2 rounded-full bg-yellow-400" />
-                <div className="w-2 h-2 rounded-full bg-green-400" />
-              </div>
-              <span className="text-[10px] text-green-300 font-medium">Tiroides Activa</span>
-              <div className="w-12" />
-            </div>
+          <Image
+            src="/mockup-plataforma.png"
+            alt="Tiroides Activa — plataforma de recetas"
+            width={800}
+            height={500}
+            className="w-full drop-shadow-2xl rounded-xl"
+          />
+          <p className="text-center text-sm text-stone-500 mt-4">
+            📱 Disponible desde celular, tablet y computadora
+          </p>
 
-            <div className="border-x-2 border-[#1B4332] overflow-hidden bg-[#FAFAF7]" style={{ minHeight: '520px' }}>
-              <Image
-                key={slideActivo}
-                src={slides[slideActivo].img}
-                alt={slides[slideActivo].titulo}
-                width={300}
-                height={560}
-                className="w-full transition-opacity duration-300"
-              />
-            </div>
-
-            <div className="bg-[#1B4332] rounded-b-3xl px-4 py-3 flex items-center justify-center gap-6">
-              {['🏠', '📖', '✨', '⭐', '🛒', '👤'].map((icon, i) => (
-                <span key={i} className="text-lg opacity-70">{icon}</span>
-              ))}
-            </div>
-          </div>
-
-          {/* Descripción del slide */}
-          <div className="mt-6 text-center max-w-xs mx-auto min-h-[72px]">
-            <p className="font-semibold text-[#1B4332] text-base mb-1">{slides[slideActivo].titulo}</p>
-            <p className="text-stone-500 text-sm leading-relaxed">{slides[slideActivo].descripcion}</p>
-          </div>
-
-          {/* Dots */}
-          <div className="flex items-center justify-center gap-2 mt-5">
-            {slides.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setSlideActivo(i)}
-                className={`rounded-full transition-all duration-200 ${
-                  i === slideActivo
-                    ? 'w-6 h-2.5 bg-[#1B4332]'
-                    : 'w-2.5 h-2.5 bg-green-100 hover:bg-green-300'
-                }`}
-                aria-label={`Ver pantalla ${i + 1}`}
-              />
-            ))}
-          </div>
-
-          {/* Flechas */}
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <button
-              onClick={() => setSlideActivo(prev => (prev === 0 ? slides.length - 1 : prev - 1))}
-              className="w-10 h-10 rounded-full border-2 border-[#1B4332] text-[#1B4332] flex items-center justify-center text-lg font-bold hover:bg-[#1B4332] hover:text-white transition-colors"
-              aria-label="Anterior"
-            >
-              ←
-            </button>
-            <span className="text-sm text-stone-500 tabular-nums">{slideActivo + 1} / {slides.length}</span>
-            <button
-              onClick={() => setSlideActivo(prev => (prev === slides.length - 1 ? 0 : prev + 1))}
-              className="w-10 h-10 rounded-full border-2 border-[#1B4332] text-[#1B4332] flex items-center justify-center text-lg font-bold hover:bg-[#1B4332] hover:text-white transition-colors"
-              aria-label="Siguiente"
-            >
-              →
-            </button>
-          </div>
-
-          {/* CTA */}
           <div className="mt-8 text-center">
             <button
               onClick={handleClickCompra}
