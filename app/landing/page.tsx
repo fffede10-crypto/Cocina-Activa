@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const CHECKOUT_URL = 'https://agoraeducacion.store/cart/53159708557591:1';
-const DURACION_CONTADOR = 23 * 3600 + 59 * 60 + 59;
+const DIAS_SEMANA = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
 
 const COMPRAS_RECIENTES = [
   { nombre: 'María Elena', ciudad: 'Buenos Aires', condicion: 'Hipotiroidismo' },
@@ -191,29 +191,32 @@ function TrustRow({ dark = false }: { dark?: boolean }) {
 }
 
 export default function LandingPage() {
-  const [tiempo, setTiempo] = useState('23:59:59');
+  const [minutos, setMinutos] = useState(28);
+  const [segundos, setSegundos] = useState(47);
+  const [hoyMayus, setHoyMayus] = useState('HOY');
   const [faqAbierto, setFaqAbierto] = useState<number | null>(null);
   const [popup, setPopup] = useState<{ nombre: string; ciudad: string; condicion: string; hace: number } | null>(null);
   const [slideActivo, setSlideActivo] = useState(0);
 
   useEffect(() => {
-    let restante = parseInt(localStorage.getItem('tiroides_timer') ?? String(DURACION_CONTADOR));
+    const dia = DIAS_SEMANA[new Date().getDay()];
+    setHoyMayus((dia.charAt(0).toUpperCase() + dia.slice(1)).toUpperCase());
+  }, []);
 
-    const tick = () => {
-      if (restante <= 0) restante = DURACION_CONTADOR;
-      const h = Math.floor(restante / 3600);
-      const m = Math.floor((restante % 3600) / 60);
-      const s = restante % 60;
-      setTiempo(
-        `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
-      );
-      localStorage.setItem('tiroides_timer', String(restante));
-      restante--;
-    };
-
-    tick();
-    const interval = setInterval(tick, 1000);
-    return () => clearInterval(interval);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSegundos(prev => {
+        if (prev === 0) {
+          setMinutos(m => {
+            if (m === 0) return 28;
+            return m - 1;
+          });
+          return 59;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
   }, []);
 
   useEffect(() => {
@@ -250,11 +253,26 @@ export default function LandingPage() {
   return (
     <div className="font-sans text-stone-900 overflow-x-hidden">
 
-      {/* ===== 0. BARRA STICKY ===== */}
-      <div className="sticky top-0 z-50 bg-[#1B4332] text-white text-center py-2.5 px-4 text-sm font-medium">
-        🔥 75% OFF · La oferta termina en{' '}
-        <span className="font-bold tabular-nums">{tiempo}</span>
-        {' '}· Acceso inmediato a la plataforma
+      {/* ===== 0. BARRA STICKY MARQUEE ===== */}
+      <div className="sticky top-0 z-50 bg-[#1B4332] overflow-hidden py-2.5">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {[0, 1, 2].map(i => (
+            <div key={i} className="flex items-center gap-8 px-6 flex-shrink-0">
+              <span className="text-white text-sm font-medium flex items-center gap-2">
+                🔥 <span className="text-orange-400 font-bold">75% OFF</span> + bonos de regalo
+              </span>
+              <span className="text-white text-sm font-medium flex items-center gap-2">
+                ⏱️ La oferta termina en
+                <span className="bg-orange-500 text-white font-bold px-2.5 py-0.5 rounded text-sm min-w-[58px] text-center tabular-nums">
+                  {String(minutos).padStart(2, '0')}:{String(segundos).padStart(2, '0')}
+                </span>
+              </span>
+              <span className="text-white text-sm font-medium">⚡ Acceso inmediato a la plataforma</span>
+              <span className="text-white text-sm font-medium">🛡️ Garantía 7 días sin preguntas</span>
+              <span className="text-green-300 text-sm font-medium">·</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ===== 1. HERO ===== */}
@@ -566,38 +584,93 @@ export default function LandingPage() {
       </section>
 
       {/* ===== 10. PRECIO + URGENCIA ===== */}
-      <section className="bg-[#0f2b1f] py-16 px-4 text-white">
-        <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-block bg-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
-            🔥 Oferta especial por tiempo limitado
+      <section className="py-16 px-5 bg-[#1B4332]" id="comprar">
+        <div className="max-w-lg mx-auto">
+
+          <div className="text-center mb-6">
+            <span className="bg-orange-500 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full">
+              🔥 OFERTA ESPECIAL — SOLO POR HOY {hoyMayus}
+            </span>
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8 leading-snug">
-            Accedé ahora y empezá a<br />
-            comer bien para tu tiroides hoy mismo
+
+          <h2 className="font-serif text-3xl md:text-4xl text-white text-center mb-3 leading-tight">
+            Accedé ahora y empezá a
+            <em className="not-italic text-orange-400"> comer bien para tu tiroides</em>
           </h2>
+          <p className="text-green-300 text-center text-sm mb-8">
+            Tu lugar estará reservado durante los próximos 15 minutos.
+            Si no accedés, el descuento pasará a la siguiente persona.
+          </p>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
-            <p className="text-white/40 line-through text-lg mb-1">Precio normal: $79.999</p>
-            <div className="inline-block bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-4">
-              75% OFF — SOLO POR HOY
+          <div className="bg-white/5 border border-white/15 rounded-2xl p-6 mb-6">
+
+            <div className="text-center mb-6">
+              <p className="text-green-300 text-sm line-through opacity-70 mb-1">Precio normal: $79.999</p>
+              <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                75% OFF — SOLO HOY {hoyMayus}
+              </span>
+              <p className="font-serif text-6xl text-white mt-3 leading-none">$19.999</p>
+              <p className="text-green-300 text-xs mt-1">ARS · Pago único · Sin suscripciones</p>
             </div>
-            <p className="font-serif text-6xl font-bold text-white mb-2">$19.999</p>
-            <p className="text-orange-400 text-sm font-medium mb-6">🔥 Quedan solo 23 accesos con descuento</p>
 
-            <div className="mb-6">
-              <p className="text-white/50 text-xs mb-1">La oferta termina en:</p>
-              <p className="font-mono text-4xl font-bold text-orange-400 tabular-nums">{tiempo}</p>
+            <div className="bg-orange-500 rounded-xl p-4 mb-6 text-center">
+              <p className="text-white text-xs font-bold uppercase tracking-wide mb-2">
+                ⚡ OFERTA HOY {hoyMayus} — Tu lugar reservado por:
+              </p>
+              <p className="text-white font-bold text-5xl tracking-widest tabular-nums">
+                {String(minutos).padStart(2, '0')} : {String(segundos).padStart(2, '0')}
+              </p>
+              <p className="text-orange-100 text-xs mt-1">Minutos · Segundos</p>
             </div>
 
             <button
               onClick={handleClickCompra}
-              className="inline-block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-8 py-5 rounded-2xl shadow-xl transition-all duration-200 cursor-pointer"
+              className="w-full bg-[#25D366] hover:bg-green-600 text-white font-bold text-lg py-4 rounded-xl transition-colors shadow-lg mb-4 cursor-pointer"
             >
-              🌿 Sí, quiero acceder a Tiroides Activa →
+              🌿 Quiero acceder ahora →
             </button>
+
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-green-300 mb-4">
+              <span>🔒 Compra 100% segura</span>
+              <span>·</span>
+              <span>⚡ Acceso inmediato</span>
+              <span>·</span>
+              <span>📱 Desde cualquier dispositivo</span>
+            </div>
+
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <span className="text-green-300 text-xs">Pagás con:</span>
+              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full font-medium">💳 Mercado Pago</span>
+              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full">Visa</span>
+              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full">Mastercard</span>
+            </div>
+
+            <div className="border-t border-white/10 pt-4 space-y-2">
+              <div className="flex items-center gap-2 text-xs text-green-300">
+                <span>✅</span>
+                <span>Tu compra incluye <strong className="text-white">futuras actualizaciones gratuitas</strong> dentro de la plataforma</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs text-green-300">
+                <span>📲</span>
+                <span><strong className="text-white">+500 mujeres</strong> ya usan la plataforma y sumando cada día</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs text-green-300">
+                <span>🔒</span>
+                <span>Pago 100% seguro procesado por <strong className="text-white">Mercado Pago</strong></span>
+              </div>
+            </div>
           </div>
 
-          <TrustRow dark />
+          <div className="bg-white/5 border border-white/15 rounded-2xl p-5 text-center">
+            <p className="text-3xl mb-2">🛡️</p>
+            <p className="font-serif text-xl text-white mb-2">Garantía Total de 7 Días</p>
+            <p className="text-green-300 text-sm leading-relaxed">
+              Si en los primeros 7 días no quedás 100% satisfecha con la plataforma,
+              te devolvemos todo el dinero sin preguntas.
+              <strong className="text-white"> Es riesgo CERO para vos.</strong>
+            </p>
+          </div>
+
         </div>
       </section>
 
