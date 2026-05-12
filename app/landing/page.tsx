@@ -256,15 +256,15 @@ export default function LandingPage() {
             lista de compras con un clic.
           </p>
 
-          <div className="grid grid-cols-3 gap-3 max-w-xs mx-auto mb-10">
-            {['🥗', '🍳', '🥣', '🍮', '🥤', '🥘'].map((e, i) => (
-              <div
-                key={i}
-                className="bg-white/10 rounded-2xl p-4 text-4xl aspect-square flex items-center justify-center hover:bg-white/20 transition-colors cursor-default"
-              >
-                {e}
-              </div>
-            ))}
+          <div className="max-w-[340px] mx-auto my-6 rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
+            <Image
+              src="/screenshots/plataforma-hero.jpg"
+              alt="Tiroides Activa — plataforma por dentro"
+              width={340}
+              height={600}
+              className="w-full"
+              priority
+            />
           </div>
 
           <CTAButton text="🌿 Quiero acceder a la plataforma →" />
