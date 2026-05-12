@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const CHECKOUT_URL = '#CHECKOUT_URL';
 const DURACION_CONTADOR = 23 * 3600 + 59 * 60 + 59;
@@ -112,12 +113,6 @@ const TESTIMONIOS = [
   },
 ];
 
-const RECETAS_MOCKUP = [
-  { emoji: '🥗', nombre: 'Ensalada de quínoa con espinaca', tiempo: '15 min', badge: 'Hipo · Hashi', badgeClass: 'bg-green-100 text-green-800' },
-  { emoji: '🍳', nombre: 'Huevos revueltos con palta y tostada', tiempo: '10 min', badge: 'Todas', badgeClass: 'bg-blue-100 text-blue-800' },
-  { emoji: '🥣', nombre: 'Bowl de avena con semillas de calabaza', tiempo: '5 min', badge: 'Hipo · Hashi', badgeClass: 'bg-green-100 text-green-800' },
-  { emoji: '🍮', nombre: 'Budín de banana sin gluten', tiempo: '45 min', badge: 'Todas', badgeClass: 'bg-blue-100 text-blue-800' },
-];
 
 const PASOS = [
   { num: '1', titulo: 'Comprás el acceso', desc: 'Pago único seguro. Sin suscripciones.' },
@@ -279,60 +274,128 @@ export default function LandingPage() {
       </section>
 
       {/* ===== 4. SOLUCIÓN ===== */}
-      <section className="bg-green-50 py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="bg-[#F0FDF4] py-16 px-4">
+        <div className="max-w-2xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">La solución que estabas buscando</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 leading-snug">
-              Una plataforma organizada de recetas<br />
-              diseñadas específicamente para tu tiroides
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 leading-snug text-[#1B4332]">
+              Una plataforma organizada de recetas{' '}
+              <em className="not-italic text-orange-500">diseñadas específicamente</em>{' '}
+              para tu tiroides
             </h2>
-            <p className="text-stone-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-stone-600 mt-4 max-w-xl mx-auto leading-relaxed">
               Tiroides Activa no es otro PDF que vas a bajar y nunca abrir.
               Es una plataforma con 65 recetas argentinas, filtradas por tu condición,
-              con ingredientes que conseguís en cualquier verdulería,
-              listas en menos de 30 minutos y que toda la familia puede comer.
+              con ingredientes que conseguís en cualquier verdulería.
             </p>
           </div>
 
-          {/* Mockup de la plataforma */}
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-2xl mx-auto border border-stone-200">
-            <div className="bg-[#1B4332] px-4 py-3 flex items-center justify-between">
-              <span className="text-white font-bold text-sm">🌿 Tiroides Activa</span>
-              <div className="flex gap-1.5">
-                <span className="w-3 h-3 rounded-full bg-red-400" />
-                <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
+          <div className="space-y-6">
+
+            {/* Screenshot principal — Dashboard con accesos */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+              <div className="bg-[#1B4332] px-4 py-2 flex items-center gap-2">
+                <div className="flex gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                </div>
+                <div className="flex-1 bg-white/10 rounded px-2 py-0.5 text-center">
+                  <span className="text-[10px] text-green-300">plataforma-tiroides.vercel.app</span>
+                </div>
+              </div>
+              <Image
+                src="/screenshots/dashboard-accesos.jpg"
+                alt="Dashboard de Tiroides Activa con accesos rápidos"
+                width={600}
+                height={1000}
+                className="w-full"
+              />
+              <div className="p-4 border-t border-stone-100">
+                <p className="font-semibold text-[#1B4332] text-sm">🏠 Tu dashboard personalizado</p>
+                <p className="text-stone-500 text-xs mt-1">Accesos rápidos, receta del día y estadísticas de tu progreso</p>
               </div>
             </div>
-            <div className="p-5">
-              <div className="flex items-center justify-between mb-4">
-                <p className="font-semibold text-stone-700 text-sm">
-                  Recetas para vos ·{' '}
-                  <span className="text-orange-500">Hipotiroidismo</span>
-                </p>
-                <span className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full border border-orange-200">
-                  65 recetas
-                </span>
+
+            {/* Fila 2 — Recetas grid + Detalle */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
+                <Image
+                  src="/screenshots/recetas-grid.jpg"
+                  alt="Biblioteca de 65 recetas con filtros por condición"
+                  width={300}
+                  height={550}
+                  className="w-full"
+                />
+                <div className="p-3 border-t border-stone-100">
+                  <p className="font-semibold text-[#1B4332] text-xs">📖 65 recetas</p>
+                  <p className="text-stone-500 text-[10px] mt-0.5">Con filtros por condición</p>
+                </div>
               </div>
-              <div className="grid grid-cols-2 gap-3">
-                {RECETAS_MOCKUP.map((r, i) => (
-                  <div key={i} className="border border-stone-100 rounded-xl p-3 hover:border-green-300 transition-colors cursor-pointer">
-                    <div className="text-3xl mb-2">{r.emoji}</div>
-                    <p className="font-medium text-stone-800 text-xs leading-tight mb-2">{r.nombre}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-stone-400">⏱ {r.tiempo}</span>
-                      <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${r.badgeClass}`}>
-                        {r.badge}
-                      </span>
-                    </div>
-                  </div>
-                ))}
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
+                <Image
+                  src="/screenshots/receta-detalle.jpg"
+                  alt="Detalle de receta con tip nutricional para la tiroides"
+                  width={300}
+                  height={550}
+                  className="w-full"
+                />
+                <div className="p-3 border-t border-stone-100">
+                  <p className="font-semibold text-[#1B4332] text-xs">🍳 Detalle completo</p>
+                  <p className="text-stone-500 text-[10px] mt-0.5">Tip para tu tiroides</p>
+                </div>
               </div>
             </div>
+
+            {/* Fila 3 — Ingredientes + Guía alimentos */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
+                <Image
+                  src="/screenshots/receta-ingredientes.jpg"
+                  alt="Ingredientes con botón para agregar a lista de compras"
+                  width={300}
+                  height={550}
+                  className="w-full"
+                />
+                <div className="p-3 border-t border-stone-100">
+                  <p className="font-semibold text-[#1B4332] text-xs">🛒 Agregar al carrito</p>
+                  <p className="text-stone-500 text-[10px] mt-0.5">Con un toque</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
+                <Image
+                  src="/screenshots/guia-alimentos.jpg"
+                  alt="Guía de alimentos verde amarillo rojo para tiroides"
+                  width={300}
+                  height={550}
+                  className="w-full"
+                />
+                <div className="p-3 border-t border-stone-100">
+                  <p className="font-semibold text-[#1B4332] text-xs">🟢 Guía alimentos</p>
+                  <p className="text-stone-500 text-[10px] mt-0.5">Verde, amarillo y rojo</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Screenshot principal — Receta del día */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
+              <Image
+                src="/screenshots/receta-del-dia.jpg"
+                alt="Receta del día personalizada con mensaje para tu tiroides"
+                width={600}
+                height={900}
+                className="w-full"
+              />
+              <div className="p-4 border-t border-stone-100">
+                <p className="font-semibold text-[#1B4332] text-sm">✨ Receta del día personalizada</p>
+                <p className="text-stone-500 text-xs mt-1">Cada día una receta diferente con un mensaje específico para tu condición tiroidea</p>
+              </div>
+            </div>
+
           </div>
-          <p className="text-center text-stone-500 text-sm mt-4">
-            Así se ve tu plataforma desde cualquier dispositivo 📱💻
+
+          <p className="text-center text-stone-500 text-sm mt-6">
+            📱 Así se ve tu plataforma desde el celular — sin instalar nada
           </p>
         </div>
       </section>
