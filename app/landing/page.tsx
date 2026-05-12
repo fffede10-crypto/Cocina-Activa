@@ -1,0 +1,629 @@
+'use client';
+import { useEffect, useState } from 'react';
+
+const CHECKOUT_URL = '#CHECKOUT_URL';
+const DURACION_CONTADOR = 23 * 3600 + 59 * 60 + 59;
+
+const COMPRAS_RECIENTES = [
+  { nombre: 'María Elena', ciudad: 'Buenos Aires', condicion: 'Hipotiroidismo' },
+  { nombre: 'Claudia', ciudad: 'Córdoba', condicion: 'Hashimoto' },
+  { nombre: 'Patricia', ciudad: 'Rosario', condicion: 'Hipertiroidismo' },
+  { nombre: 'Valeria', ciudad: 'Mendoza', condicion: 'Hashimoto' },
+  { nombre: 'Gabriela', ciudad: 'Tucumán', condicion: 'Hipotiroidismo' },
+  { nombre: 'Laura', ciudad: 'Mar del Plata', condicion: 'Hashimoto' },
+];
+
+const FAQ_ITEMS = [
+  {
+    q: '¿Por cuánto tiempo tengo acceso a la plataforma?',
+    a: 'Tenés acceso vitalicio. Pagás una sola vez y accedés para siempre desde cualquier dispositivo. Sin cuotas, sin renovaciones, sin sorpresas.',
+  },
+  {
+    q: '¿Cómo accedo después de comprar?',
+    a: 'Después de tu compra, nos escribís por WhatsApp con tu nombre y email. En menos de 5 minutos te mandamos el link de la plataforma con tus credenciales de acceso.',
+  },
+  {
+    q: '¿Qué pasa si necesito ayuda?',
+    a: 'Respondemos todos los mensajes por WhatsApp. Estamos para acompañarte en todo el proceso.',
+  },
+  {
+    q: '¿Las recetas sirven para toda la familia?',
+    a: 'Sí. Están pensadas para que toda la familia las disfrute — no tienen que saber que son "recetas para tiroides". Platos ricos, simples y con ingredientes de supermercado.',
+  },
+  {
+    q: '¿Necesito saber cocinar para usar la plataforma?',
+    a: 'Para nada. Cada receta tiene el paso a paso detallado con tiempos exactos. Si sabés hervir agua, podés hacer estas recetas.',
+  },
+];
+
+const DOLORES = [
+  {
+    emoji: '😩',
+    titulo: 'Te diagnosticaron hipotiroidismo, Hashimoto o hipertiroidismo',
+    desc: 'y nadie te explicó qué podés comer y qué no. Saliste del consultorio con la receta pero sin un plan.',
+  },
+  {
+    emoji: '🔍',
+    titulo: 'Buscás en Google y cada página dice algo distinto.',
+    desc: '¿El brócoli hace mal? ¿Podés comer gluten? ¿La soja afecta? La confusión te paraliza.',
+  },
+  {
+    emoji: '⚖️',
+    titulo: 'El peso te sube sin freno',
+    desc: 'aunque comés poco y hacés todo bien. Porque ninguna dieta que probaste fue pensada para tu condición tiroidea.',
+  },
+  {
+    emoji: '😴',
+    titulo: 'Estás agotada todo el día',
+    desc: 'aunque dormiste 8 horas. Y tu entorno no entiende porque "tus análisis están bien".',
+  },
+  {
+    emoji: '😞',
+    titulo: 'Sentís que comer para la tiroides es aburrido',
+    desc: '— pollo hervido y verdura todos los días. Y terminás comiendo lo de siempre porque no sabés qué más preparar.',
+  },
+  {
+    emoji: '💸',
+    titulo: 'Gastaste en endocrinólogos, nutricionistas y suplementos',
+    desc: 'pero nadie te dio un plan de comidas concreto, rico y fácil de seguir para tu tiroides o tu Hashimoto.',
+  },
+];
+
+const INCLUYE = [
+  { item: '65 Recetas Organizadas', desc: 'Desayunos, almuerzos, cenas, postres y jugos verdes para hipo, hiper y Hashimoto', valor: '$25.000' },
+  { item: 'Filtros por tu Condición', desc: 'Las recetas aptas para vos aparecen primero — hipotiroidismo, Hashimoto o hipertiroidismo', valor: '$10.000' },
+  { item: 'Guía de Alimentos Verde/Amarillo/Rojo', desc: 'Qué comer, qué moderar y qué evitar, con la razón nutricional específica para tu tiroides', valor: '$15.000' },
+  { item: 'Lista de Compras Inteligente', desc: 'Agregás ingredientes con un clic desde la receta, agrupados por receta y listos para compartir por WhatsApp', valor: '$8.000' },
+  { item: 'Jugos Verdes Antiinflamatorios', desc: '5 jugos especiales para la tiroides, incluyendo agua de limón con cúrcuma y el jugo verde clásico', valor: '$8.000' },
+  { item: 'Receta del Día Personalizada', desc: 'Cada día una receta diferente con un mensaje motivacional según tu condición y síntomas', valor: '$5.000' },
+  { item: 'Acceso Vitalicio desde cualquier dispositivo', desc: 'Pagás una sola vez y accedés para siempre. Sin suscripciones, sin renovaciones.', valor: '$15.000' },
+];
+
+const RESULTADOS = [
+  { emoji: '⚡', titulo: 'Más energía real', desc: 'Dejás de andar agotada. Cada comida está pensada para darte vitalidad desde el primer bocado.' },
+  { emoji: '⚖️', titulo: 'Metabolismo activo', desc: 'Recetas con selenio, zinc y yodo moderado que apoyan la función tiroidea y el metabolismo.' },
+  { emoji: '💧', titulo: 'Menos hinchazón', desc: 'Ingredientes antiinflamatorios que reducen la retención de líquidos característica del hipotiroidismo.' },
+  { emoji: '💇', titulo: 'Cabello más fuerte', desc: 'Zinc, biotina y proteínas de calidad en cada receta para apoyar la salud del cabello.' },
+  { emoji: '🧠', titulo: 'Más claridad mental', desc: 'Omega-3 y antioxidantes que reducen la niebla mental asociada al hipotiroidismo y Hashimoto.' },
+  { emoji: '😋', titulo: 'Comés rico sin culpa', desc: 'Se terminaron las comidas aburridas. Platos que tu familia también va a querer repetir.' },
+];
+
+const TESTIMONIOS = [
+  {
+    texto: '"Hace 3 semanas que uso la plataforma y la diferencia es impresionante. Mis valores de TSH mejoraron y mi endocrinóloga me preguntó qué había cambiado. Los desayunos con avena y semillas de calabaza se transformaron en mi ritual de cada mañana. ¡Por fin algo que funciona y encima es rico!"',
+    nombre: 'María Elena G.',
+    ciudad: 'Buenos Aires',
+    condicion: 'Hipotiroidismo',
+    inicial: 'M',
+  },
+  {
+    texto: '"Tengo hipertiroidismo y encontrar postres que pudiera comer sin sentirme mal era misión imposible. Probé la torta de banana con harina de almendras y no lo podía creer: riquísima y sin un solo ingrediente que me haga mal. Mi familia ni se dio cuenta de la diferencia."',
+    nombre: 'Claudia F.',
+    ciudad: 'Córdoba',
+    condicion: 'Hipertiroidismo',
+    inicial: 'C',
+  },
+  {
+    texto: '"Lo que más me gustó es que las recetas usan ingredientes que consigo en cualquier supermercado. No tuve que comprar nada raro ni gastar de más. En un mes bajé 3 kilos sin hacer dieta, solo siguiendo las recetas del almuerzo y la cena."',
+    nombre: 'Patricia M.',
+    ciudad: 'Rosario',
+    condicion: 'Hashimoto',
+    inicial: 'P',
+  },
+];
+
+const RECETAS_MOCKUP = [
+  { emoji: '🥗', nombre: 'Ensalada de quínoa con espinaca', tiempo: '15 min', badge: 'Hipo · Hashi', badgeClass: 'bg-green-100 text-green-800' },
+  { emoji: '🍳', nombre: 'Huevos revueltos con palta y tostada', tiempo: '10 min', badge: 'Todas', badgeClass: 'bg-blue-100 text-blue-800' },
+  { emoji: '🥣', nombre: 'Bowl de avena con semillas de calabaza', tiempo: '5 min', badge: 'Hipo · Hashi', badgeClass: 'bg-green-100 text-green-800' },
+  { emoji: '🍮', nombre: 'Budín de banana sin gluten', tiempo: '45 min', badge: 'Todas', badgeClass: 'bg-blue-100 text-blue-800' },
+];
+
+const PASOS = [
+  { num: '1', titulo: 'Comprás el acceso', desc: 'Pago único seguro. Sin suscripciones.' },
+  { num: '2', titulo: 'Nos escribís por WhatsApp', desc: 'Con tu nombre y email para activar tu cuenta.' },
+  { num: '3', titulo: 'Recibís tus credenciales', desc: 'Te mandamos el acceso en menos de 5 minutos.' },
+  { num: '4', titulo: 'Ingresás y empezás', desc: 'Completás tu perfil y accedés a las 65 recetas personalizadas.' },
+];
+
+function CTAButton({ text, className = '' }: { text: string; className?: string }) {
+  return (
+    <a
+      href={CHECKOUT_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all duration-200 hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 ${className}`}
+    >
+      {text}
+    </a>
+  );
+}
+
+function TrustRow({ dark = false }: { dark?: boolean }) {
+  const text = dark ? 'text-white/70' : 'text-stone-500';
+  const stars = dark ? 'text-yellow-400' : 'text-yellow-500';
+  return (
+    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-5 text-sm">
+      <span className={`flex items-center gap-1 font-semibold ${stars}`}>
+        ★★★★★ <span className={`font-normal ${text}`}>4.9/5 — opiniones verificadas</span>
+      </span>
+      <span className={text}>🛡️ Garantía de 60 Días — Riesgo cero</span>
+    </div>
+  );
+}
+
+export default function LandingPage() {
+  const [tiempo, setTiempo] = useState('23:59:59');
+  const [faqAbierto, setFaqAbierto] = useState<number | null>(null);
+  const [popup, setPopup] = useState<{ nombre: string; ciudad: string; condicion: string; hace: number } | null>(null);
+
+  useEffect(() => {
+    let restante = parseInt(localStorage.getItem('tiroides_timer') ?? String(DURACION_CONTADOR));
+
+    const tick = () => {
+      if (restante <= 0) restante = DURACION_CONTADOR;
+      const h = Math.floor(restante / 3600);
+      const m = Math.floor((restante % 3600) / 60);
+      const s = restante % 60;
+      setTiempo(
+        `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+      );
+      localStorage.setItem('tiroides_timer', String(restante));
+      restante--;
+    };
+
+    tick();
+    const interval = setInterval(tick, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const mostrar = () => {
+      const compra = COMPRAS_RECIENTES[Math.floor(Math.random() * COMPRAS_RECIENTES.length)];
+      const hace = Math.floor(Math.random() * 8) + 1;
+      setPopup({ ...compra, hace });
+      setTimeout(() => setPopup(null), 4500);
+    };
+
+    const t1 = setTimeout(mostrar, 8000);
+    const interval = setInterval(mostrar, 45000);
+    return () => { clearTimeout(t1); clearInterval(interval); };
+  }, []);
+
+  return (
+    <div className="font-sans text-stone-900 overflow-x-hidden">
+
+      {/* ===== 0. BARRA STICKY ===== */}
+      <div className="sticky top-0 z-50 bg-[#1B4332] text-white text-center py-2.5 px-4 text-sm font-medium">
+        🔥 75% OFF · La oferta termina en{' '}
+        <span className="font-bold tabular-nums">{tiempo}</span>
+        {' '}· Acceso inmediato a la plataforma
+      </div>
+
+      {/* ===== 1. HERO ===== */}
+      <section className="bg-[#1B4332] text-white py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="inline-block bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-xs font-bold tracking-widest uppercase mb-6">
+            🌿 La primera plataforma argentina para tiroides
+          </div>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
+            ¿Cansada de tomar la pastilla y<br />
+            seguir{' '}
+            <span className="text-orange-400">igual</span>{' '}
+            de agotada,<br />
+            hinchada y sin poder bajar de peso?
+          </h1>
+          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Tiroides Activa es la plataforma con 65 recetas argentinas organizadas
+            para tu condición — hipotiroidismo, Hashimoto o hipertiroidismo.
+            Con ingredientes de tu verdulería, filtros personalizados y
+            lista de compras con un clic.
+          </p>
+
+          <div className="grid grid-cols-3 gap-3 max-w-xs mx-auto mb-10">
+            {['🥗', '🍳', '🥣', '🍮', '🥤', '🥘'].map((e, i) => (
+              <div
+                key={i}
+                className="bg-white/10 rounded-2xl p-4 text-4xl aspect-square flex items-center justify-center hover:bg-white/20 transition-colors cursor-default"
+              >
+                {e}
+              </div>
+            ))}
+          </div>
+
+          <CTAButton text="🌿 Quiero acceder a la plataforma →" />
+          <TrustRow dark />
+        </div>
+      </section>
+
+      {/* ===== 2. SOCIAL PROOF BAR ===== */}
+      <section className="bg-[#0f2b1f] text-white py-12 px-4">
+        <div className="max-w-3xl mx-auto grid grid-cols-3 gap-4 text-center divide-x divide-white/20">
+          <div>
+            <p className="font-serif text-4xl md:text-5xl font-bold text-orange-400">+500</p>
+            <p className="text-white/60 text-sm mt-1 leading-snug">mujeres<br />que ya<br />accedieron</p>
+          </div>
+          <div>
+            <p className="font-serif text-4xl md:text-5xl font-bold text-orange-400">65</p>
+            <p className="text-white/60 text-sm mt-1 leading-snug">recetas<br />organizadas</p>
+          </div>
+          <div>
+            <p className="font-serif text-4xl md:text-5xl font-bold text-orange-400">4.9★</p>
+            <p className="text-white/60 text-sm mt-1 leading-snug">calificación<br />promedio</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 3. DOLORES ===== */}
+      <section className="bg-[#FAFAF7] py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">¿Te identificás con esto?</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 leading-snug">
+              Tu médico te dijo "cuidá la alimentación"...<br />
+              pero no te explicó qué comer exactamente
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {DOLORES.map((d, i) => (
+              <div key={i} className="bg-white border-l-4 border-orange-500 rounded-xl p-5 shadow-sm">
+                <p className="font-semibold text-stone-900">
+                  <span className="mr-2">{d.emoji}</span>
+                  {d.titulo}
+                </p>
+                <p className="text-stone-600 mt-1 text-sm leading-relaxed">{d.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 4. SOLUCIÓN ===== */}
+      <section className="bg-green-50 py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">La solución que estabas buscando</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 leading-snug">
+              Una plataforma organizada de recetas<br />
+              diseñadas específicamente para tu tiroides
+            </h2>
+            <p className="text-stone-600 mt-4 max-w-2xl mx-auto leading-relaxed">
+              Tiroides Activa no es otro PDF que vas a bajar y nunca abrir.
+              Es una plataforma con 65 recetas argentinas, filtradas por tu condición,
+              con ingredientes que conseguís en cualquier verdulería,
+              listas en menos de 30 minutos y que toda la familia puede comer.
+            </p>
+          </div>
+
+          {/* Mockup de la plataforma */}
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-2xl mx-auto border border-stone-200">
+            <div className="bg-[#1B4332] px-4 py-3 flex items-center justify-between">
+              <span className="text-white font-bold text-sm">🌿 Tiroides Activa</span>
+              <div className="flex gap-1.5">
+                <span className="w-3 h-3 rounded-full bg-red-400" />
+                <span className="w-3 h-3 rounded-full bg-yellow-400" />
+                <span className="w-3 h-3 rounded-full bg-green-400" />
+              </div>
+            </div>
+            <div className="p-5">
+              <div className="flex items-center justify-between mb-4">
+                <p className="font-semibold text-stone-700 text-sm">
+                  Recetas para vos ·{' '}
+                  <span className="text-orange-500">Hipotiroidismo</span>
+                </p>
+                <span className="text-xs bg-orange-50 text-orange-600 px-2 py-1 rounded-full border border-orange-200">
+                  65 recetas
+                </span>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                {RECETAS_MOCKUP.map((r, i) => (
+                  <div key={i} className="border border-stone-100 rounded-xl p-3 hover:border-green-300 transition-colors cursor-pointer">
+                    <div className="text-3xl mb-2">{r.emoji}</div>
+                    <p className="font-medium text-stone-800 text-xs leading-tight mb-2">{r.nombre}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-stone-400">⏱ {r.tiempo}</span>
+                      <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${r.badgeClass}`}>
+                        {r.badge}
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-stone-500 text-sm mt-4">
+            Así se ve tu plataforma desde cualquier dispositivo 📱💻
+          </p>
+        </div>
+      </section>
+
+      {/* ===== 5. QUÉ INCLUYE ===== */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">Acceso Inmediato</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3">¿Qué vas a encontrar adentro?</h2>
+          </div>
+          <div className="space-y-3">
+            {INCLUYE.map((item, i) => (
+              <div key={i} className="flex items-start justify-between gap-4 bg-green-50 rounded-xl p-4 border border-green-100">
+                <div className="flex-1">
+                  <p className="font-bold text-stone-900">✅ {item.item}</p>
+                  <p className="text-stone-600 text-sm mt-0.5">{item.desc}</p>
+                </div>
+                <span className="text-stone-400 line-through text-sm whitespace-nowrap flex-shrink-0 pt-0.5">
+                  {item.valor}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 bg-[#1B4332] text-white rounded-2xl p-6 text-center">
+            <p className="text-white/60 line-through text-sm mb-1">Valor total: $86.000</p>
+            <p className="font-serif text-3xl font-bold">
+              Hoy: <span className="text-orange-400">$19.999</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 6. RESULTADOS ===== */}
+      <section className="bg-green-50 py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">Lo que vas a lograr</span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3">
+              ¿Qué cambia cuando comés bien para tu tiroides?
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {RESULTADOS.map((r, i) => (
+              <div key={i} className="bg-white rounded-xl p-5 shadow-sm border border-green-100">
+                <p className="text-2xl mb-2">{r.emoji}</p>
+                <p className="font-bold text-stone-900 mb-1">{r.titulo}</p>
+                <p className="text-stone-600 text-sm leading-relaxed">{r.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 7. CÓMO FUNCIONA ===== */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-12">
+            Cómo accedés a la plataforma
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {PASOS.map((paso, i) => (
+              <div key={i} className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-orange-500 text-white font-bold text-lg flex items-center justify-center flex-shrink-0">
+                  {paso.num}
+                </div>
+                <div>
+                  <p className="font-bold text-stone-900">{paso.titulo}</p>
+                  <p className="text-stone-600 text-sm mt-0.5">{paso.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 8. TESTIMONIOS ===== */}
+      <section className="bg-[#FAFAF7] py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">
+              Lo que dicen nuestras usuarias
+            </span>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3">
+              Mujeres que ya organizaron su alimentación con Tiroides Activa
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {TESTIMONIOS.map((t, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100 flex flex-col">
+                <div className="text-yellow-400 text-sm mb-3">★★★★★</div>
+                <p className="text-stone-600 text-sm leading-relaxed italic flex-1 mb-4">{t.texto}</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-[#1B4332] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
+                    {t.inicial}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-stone-900 text-sm">{t.nombre} · {t.ciudad}</p>
+                    <p className="text-stone-400 text-xs">{t.condicion} ✓ Compra verificada</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 9. CONTADOR PERSONAS ===== */}
+      <section className="bg-[#1B4332] py-14 px-4 text-center text-white">
+        <p className="font-serif text-6xl md:text-7xl font-bold text-orange-400 mb-2">+500</p>
+        <p className="text-xl text-white/80">mujeres ya están usando Tiroides Activa</p>
+        <p className="text-white/50 mt-1 text-sm">y sumando cada día 🌿</p>
+      </section>
+
+      {/* ===== 10. PRECIO + URGENCIA ===== */}
+      <section className="bg-[#0f2b1f] py-16 px-4 text-white">
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="inline-block bg-orange-500 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 uppercase tracking-wider">
+            🔥 Oferta especial por tiempo limitado
+          </div>
+          <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8 leading-snug">
+            Accedé ahora y empezá a<br />
+            comer bien para tu tiroides hoy mismo
+          </h2>
+
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 mb-8">
+            <p className="text-white/40 line-through text-lg mb-1">Precio normal: $79.999</p>
+            <div className="inline-block bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-4">
+              75% OFF — SOLO POR HOY
+            </div>
+            <p className="font-serif text-6xl font-bold text-white mb-2">$19.999</p>
+            <p className="text-orange-400 text-sm font-medium mb-6">🔥 Quedan solo 23 accesos con descuento</p>
+
+            <div className="mb-6">
+              <p className="text-white/50 text-xs mb-1">La oferta termina en:</p>
+              <p className="font-mono text-4xl font-bold text-orange-400 tabular-nums">{tiempo}</p>
+            </div>
+
+            <a
+              href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-8 py-5 rounded-2xl shadow-xl transition-all duration-200"
+            >
+              🌿 Sí, quiero acceder a Tiroides Activa →
+            </a>
+          </div>
+
+          <TrustRow dark />
+        </div>
+      </section>
+
+      {/* ===== 11. GARANTÍA ===== */}
+      <section className="bg-[#FAFAF7] py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-8">
+            Garantía Total de 60 Días
+          </h2>
+          <div className="bg-white border-2 border-[#1B4332] rounded-2xl p-8 text-center shadow-sm">
+            <p className="text-5xl mb-4">🛡️</p>
+            <p className="font-bold text-xl text-stone-900 mb-4">Tu inversión está 100% protegida.</p>
+            <p className="text-stone-600 leading-relaxed">
+              Tenés 60 días para explorar la plataforma, probar las recetas y evaluar
+              los resultados. Si no quedás plenamente satisfecha, pedís el reembolso
+              y te devolvemos todo. Es riesgo{' '}
+              <strong className="text-stone-900">CERO</strong>{' '}
+              para vos y compromiso total de nuestra parte.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 12. QUÉ INCLUYE TU COMPRA ===== */}
+      <section className="bg-[#1B4332] py-16 px-4 text-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {[
+              { emoji: '📱', titulo: 'Acceso desde celular y computadora', desc: 'Usá la plataforma desde donde estés, cuando quieras.' },
+              { emoji: '⚡', titulo: 'Activación en menos de 5 minutos', desc: 'Te mandamos el acceso por WhatsApp inmediatamente.' },
+              { emoji: '♾️', titulo: 'Acceso de por vida + actualizaciones', desc: 'El material es tuyo para siempre. Nuevas recetas incluidas sin costo.' },
+            ].map((c, i) => (
+              <div key={i} className="bg-white/10 rounded-2xl p-6 text-center border border-white/10">
+                <p className="text-4xl mb-3">{c.emoji}</p>
+                <p className="font-bold mb-1 text-sm">{c.titulo}</p>
+                <p className="text-white/60 text-sm">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center">
+            <CTAButton text="🌿 QUIERO ACCESO YA →" />
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 13. FAQ ===== */}
+      <section className="bg-[#FAFAF7] py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-10">
+            Preguntas Frecuentes
+          </h2>
+          <div className="space-y-3">
+            {FAQ_ITEMS.map((faq, i) => (
+              <div key={i} className="bg-white rounded-xl border border-stone-100 shadow-sm overflow-hidden">
+                <button
+                  className="w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-stone-900 hover:bg-stone-50 transition-colors"
+                  onClick={() => setFaqAbierto(faqAbierto === i ? null : i)}
+                >
+                  <span>{faq.q}</span>
+                  <span className="text-orange-500 text-xl font-bold ml-4 flex-shrink-0 leading-none">
+                    {faqAbierto === i ? '−' : '+'}
+                  </span>
+                </button>
+                {faqAbierto === i && (
+                  <div className="px-5 pb-4 pt-2 text-stone-600 text-sm leading-relaxed border-t border-stone-100">
+                    {faq.a}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 14. CTA FINAL ===== */}
+      <section className="bg-[#0f2b1f] py-16 px-4 text-white text-center">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 leading-snug">
+            Empezá a comer bien para tu tiroides hoy
+          </h2>
+          <p className="text-white/70 text-lg mb-6 leading-relaxed">
+            65 recetas argentinas que cuidan tu tiroides.<br />
+            Sin riesgo. Acceso inmediato.
+          </p>
+          <p className="text-white/40 line-through text-sm mb-1">Antes: $79.999</p>
+          <p className="font-serif text-5xl font-bold text-orange-400 mb-8">$19.999</p>
+          <CTAButton text="🌿 SÍ, QUIERO MIS RECETAS YA →" />
+          <TrustRow dark />
+        </div>
+      </section>
+
+      {/* ===== 15. FOOTER ===== */}
+      <footer className="bg-[#0a1e14] py-8 px-4 text-center text-stone-500 text-xs">
+        <p className="mb-2 font-medium">© 2026 Tiroides Activa — Todos los derechos reservados.</p>
+        <p className="max-w-xl mx-auto leading-relaxed">
+          El contenido de esta plataforma es de carácter informativo y educativo.
+          No reemplaza el consejo médico profesional. Consultá con tu médico antes de realizar
+          cambios en tu alimentación.
+        </p>
+      </footer>
+
+      {/* ===== POPUP COMPRA RECIENTE ===== */}
+      {popup && (
+        <div
+          style={{
+            position: 'fixed',
+            bottom: '80px',
+            left: '16px',
+            background: '#fff',
+            border: '1px solid #E7E5E4',
+            borderLeft: '4px solid #1B4332',
+            borderRadius: '12px',
+            padding: '14px 16px',
+            boxShadow: '0 4px 20px rgba(0,0,0,.12)',
+            zIndex: 999,
+            maxWidth: '280px',
+            animation: 'slideIn .3s ease',
+            fontFamily: 'inherit',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div
+              style={{
+                width: 36, height: 36, borderRadius: '50%',
+                background: '#1B4332', display: 'flex',
+                alignItems: 'center', justifyContent: 'center',
+                color: 'white', fontWeight: 700, fontSize: 14, flexShrink: 0,
+              }}
+            >
+              {popup.nombre[0]}
+            </div>
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 600, color: '#1C1917', margin: 0 }}>
+                {popup.nombre} de {popup.ciudad}
+              </p>
+              <p style={{ fontSize: 12, color: '#57534E', margin: 0 }}>
+                Accedió hace {popup.hace} min · {popup.condicion}
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
