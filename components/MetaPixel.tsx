@@ -25,6 +25,20 @@ export default function MetaPixel() {
           `,
         }}
       />
+      <Script
+        id="utmify-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.pixelId = "6a0348d147970d06cbd78b3f";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            document.head.appendChild(a);
+          `,
+        }}
+      />
       <noscript>
         <img
           height="1"
