@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { getPerfil } from '@/lib/auth-local';
 import { getAlimentosPorCategoria } from '@/lib/recetas';
 import { Alimento, PerfilUsuario } from '@/types';
 import AppLayout from '@/components/layout/AppLayout';
@@ -69,9 +68,13 @@ export default function GuiaAlimentosPage() {
   const [busqueda, setBusqueda] = useState('');
 
   useEffect(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
-    setPerfil(p);
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => { if (data) setPerfil(data); })
+      .catch(() => { window.location.href = '/login'; });
   }, []);
 
   useEffect(() => {

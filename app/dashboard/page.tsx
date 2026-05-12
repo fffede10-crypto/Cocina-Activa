@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { getPerfil } from '@/lib/auth-local';
 import { getRecetaDelDia, recetas } from '@/lib/recetas';
 import { getBadgeCondicion, getSaludoDelDia, getMensajePersonalizado, getCategoriaEmoji } from '@/lib/personalizar';
 import { PerfilUsuario, Receta } from '@/types';
@@ -24,10 +23,18 @@ export default function DashboardPage() {
   const [recetaDia, setRecetaDia] = useState<Receta | null>(null);
 
   useEffect(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
-    setPerfil(p);
-    setRecetaDia(getRecetaDelDia());
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => {
+        if (data) {
+          setPerfil(data);
+          setRecetaDia(getRecetaDelDia());
+        }
+      })
+      .catch(() => { window.location.href = '/login'; });
   }, []);
 
   if (!perfil || !recetaDia) return (
@@ -86,7 +93,7 @@ export default function DashboardPage() {
           <ThemeToggle />
         </div>
 
-        {/* Banner bienvenida — solo si nunca cocinó ni guardó favoritas */}
+        {/* Banner bienvenida */}
         {cocinadasCount === 0 && favoritas.length === 0 && (
           <div className="bg-brand-verde/10 dark:bg-brand-verde/20 border border-brand-verde/30 dark:border-brand-verde/40 rounded-2xl px-4 py-4 space-y-1">
             <p className="font-semibold text-stone-900 dark:text-stone-100 text-sm">

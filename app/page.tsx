@@ -1,19 +1,26 @@
 'use client';
 import { useEffect } from 'react';
-import { isLogueado, getPerfil } from '@/lib/auth-local';
 
 export default function RootPage() {
   useEffect(() => {
-    if (!isLogueado()) {
-      window.location.href = '/login';
-      return;
+    async function check() {
+      try {
+        const res = await fetch('/api/auth/perfil');
+        if (!res.ok) {
+          window.location.href = '/login';
+          return;
+        }
+        const perfil = await res.json();
+        if (!perfil.vio_bienvenida) {
+          window.location.href = '/onboarding';
+          return;
+        }
+        window.location.href = '/dashboard';
+      } catch {
+        window.location.href = '/login';
+      }
     }
-    const perfil = getPerfil();
-    if (perfil && !perfil.vio_bienvenida) {
-      window.location.href = '/onboarding';
-      return;
-    }
-    window.location.href = '/dashboard';
+    check();
   }, []);
 
   return null;

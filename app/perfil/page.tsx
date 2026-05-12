@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { getPerfil, setPerfil as saveProfile, logout } from '@/lib/auth-local';
+import { logout } from '@/lib/auth-local';
 import { getBadgeCondicion } from '@/lib/personalizar';
 import { recetas } from '@/lib/recetas';
 import { PerfilUsuario, CondicionTiroidea } from '@/types';
@@ -50,23 +50,33 @@ export default function PerfilPage() {
   const [guardado, setGuardado] = useState(false);
 
   useEffect(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
-    setPerfil(p);
-    setCondicion(p.condicion_tiroidea);
-    setRestricciones(p.restricciones);
-    setSintomas(p.sintomas);
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => {
+        if (data) {
+          setPerfil(data);
+          setCondicion(data.condicion_tiroidea);
+          setRestricciones(data.restricciones);
+          setSintomas(data.sintomas);
+        }
+      })
+      .catch(() => { window.location.href = '/login'; });
   }, []);
 
   function toggleItem(list: string[], setList: (v: string[]) => void, value: string) {
     setList(list.includes(value) ? list.filter(x => x !== value) : [...list, value]);
   }
 
-  function guardar() {
-    if (!perfil) return;
-    const updated = { ...perfil, condicion_tiroidea: condicion, restricciones, sintomas };
-    saveProfile(updated);
-    setPerfil(updated);
+  async function guardar() {
+    await fetch('/api/auth/perfil', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ condicion_tiroidea: condicion, restricciones, sintomas }),
+    });
+    setPerfil(prev => prev ? { ...prev, condicion_tiroidea: condicion, restricciones, sintomas } : prev);
     setEditando(false);
     setGuardado(true);
     setTimeout(() => setGuardado(false), 2000);

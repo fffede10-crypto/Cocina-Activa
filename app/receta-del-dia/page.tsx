@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getRecetaDelDia, recetas } from '@/lib/recetas';
-import { getPerfil, toggleFavorito, marcarCocinada } from '@/lib/auth-local';
+import { toggleFavorito, marcarCocinada } from '@/lib/auth-local';
 import { getMensajePersonalizado, getCategoriaEmoji } from '@/lib/personalizar';
 import { Receta, PerfilUsuario } from '@/types';
 import Image from 'next/image';
@@ -40,10 +40,18 @@ export default function RecetaDelDiaPage() {
   const { showToast } = useToastContext();
 
   useEffect(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
-    setPerfil(p);
-    setReceta(getRecetaDelDia());
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => {
+        if (data) {
+          setPerfil(data);
+          setReceta(getRecetaDelDia());
+        }
+      })
+      .catch(() => { window.location.href = '/login'; });
   }, [tick]);
 
   if (!receta || !perfil) return null;
@@ -53,8 +61,8 @@ export default function RecetaDelDiaPage() {
   const mensaje = getMensajePersonalizado(perfil.condicion_tiroidea, perfil.sintomas);
   const cocinadasCount = recetas.filter(r => perfil.cocinadas.includes(r.id)).length;
 
-  function handleFavorito() {
-    toggleFavorito(receta!.id);
+  async function handleFavorito() {
+    await toggleFavorito(receta!.id);
     setTick(t => t + 1);
     showToast(
       isFavorito ? 'Quitada de tus favoritas' : 'Agregada a tus favoritas',
@@ -62,11 +70,11 @@ export default function RecetaDelDiaPage() {
     );
   }
 
-  function handleCocinada() {
+  async function handleCocinada() {
     if (isCocinada) return;
-    marcarCocinada(receta!.id);
+    const result = await marcarCocinada(receta!.id);
     setTick(t => t + 1);
-    showToast(`¡Qué bien! Ya llevás ${cocinadasCount + 1} recetas cocinadas`, 'exito');
+    showToast(`¡Qué bien! Ya llevás ${result.total} recetas cocinadas`, 'exito');
   }
 
   return (

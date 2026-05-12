@@ -1,7 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { getPerfil, setPerfil } from '@/lib/auth-local';
-import { CondicionTiroidea, PerfilUsuario } from '@/types';
+import { CondicionTiroidea } from '@/types';
 import Button from '@/components/ui/Button';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 
@@ -52,26 +51,32 @@ export default function OnboardingPage() {
   const [sintomas, setSintomas] = useState<string[]>([]);
 
   useEffect(() => {
-    const perfil = getPerfil();
-    if (!perfil) { window.location.href = '/login'; return; }
-    if (perfil.vio_bienvenida) { window.location.href = '/dashboard'; }
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => {
+        if (data?.vio_bienvenida) { window.location.href = '/dashboard'; }
+      })
+      .catch(() => { window.location.href = '/login'; });
   }, []);
 
   function toggleItem(list: string[], setList: (v: string[]) => void, value: string) {
     setList(list.includes(value) ? list.filter(x => x !== value) : [...list, value]);
   }
 
-  function guardar(saltearSintomas = false) {
-    const perfil = getPerfil();
-    if (!perfil) return;
-    const actualizado: PerfilUsuario = {
-      ...perfil,
-      condicion_tiroidea: condicion,
-      restricciones,
-      sintomas: saltearSintomas ? [] : sintomas,
-      vio_bienvenida: true,
-    };
-    setPerfil(actualizado);
+  async function guardar(saltearSintomas = false) {
+    await fetch('/api/auth/perfil', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        condicion_tiroidea: condicion,
+        restricciones,
+        sintomas: saltearSintomas ? [] : sintomas,
+        vio_bienvenida: true,
+      }),
+    });
     window.location.href = '/dashboard';
   }
 
@@ -82,7 +87,7 @@ export default function OnboardingPage() {
           <div className="text-center space-y-3">
             <div className="text-5xl">🌿</div>
             <h1 className="font-serif text-2xl font-bold text-stone-900 dark:text-stone-100">
-              Bienvenida a Cocina Activa
+              Bienvenida a Tiroides Activa
             </h1>
             <p className="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
               Recetas pensadas para acompañar tu tratamiento, con ingredientes que respetan tu tiroides.

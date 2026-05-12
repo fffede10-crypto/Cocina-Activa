@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { getRecetaById, getRelacionadas } from '@/lib/recetas';
-import { getPerfil, toggleFavorito, marcarCocinada } from '@/lib/auth-local';
+import { toggleFavorito, marcarCocinada } from '@/lib/auth-local';
 import { getLista, agregarIngrediente, agregarTodosIngredientes } from '@/lib/lista-compras';
 import { getMensajePersonalizado, getCategoriaEmoji } from '@/lib/personalizar';
 import { Receta, PerfilUsuario } from '@/types';
@@ -55,9 +55,6 @@ export default function RecetaDetallePage() {
     const r = getRecetaById(id);
     if (!r) { window.location.href = '/recetas'; return; }
     setReceta(r);
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
-    setPerfil(p);
     setPasosCompletados(new Set());
     setIngredientesChecked(new Set());
     const lista = getLista();
@@ -66,6 +63,13 @@ export default function RecetaDetallePage() {
         .filter(item => item.recetaId === r.id && !item.tildado)
         .map(item => item.nombre.toLowerCase())
     ));
+    fetch('/api/auth/perfil')
+      .then(res => {
+        if (!res.ok) { window.location.href = '/login'; return null; }
+        return res.json();
+      })
+      .then(data => { if (data) setPerfil(data); })
+      .catch(() => { window.location.href = '/login'; });
   }, [id, tick]);
 
   if (!receta || !perfil) return null;
@@ -75,8 +79,8 @@ export default function RecetaDetallePage() {
   const relacionadas = getRelacionadas(receta, 3);
   const mensaje = getMensajePersonalizado(perfil.condicion_tiroidea, perfil.sintomas);
 
-  function handleFavorito() {
-    toggleFavorito(receta!.id);
+  async function handleFavorito() {
+    await toggleFavorito(receta!.id);
     setTick(t => t + 1);
     showToast(
       isFavorito ? 'Quitada de tus favoritas' : 'Agregada a tus favoritas',
@@ -84,12 +88,11 @@ export default function RecetaDetallePage() {
     );
   }
 
-  function handleCocinada() {
+  async function handleCocinada() {
     if (isCocinada || !perfil) return;
-    marcarCocinada(receta!.id);
-    const nuevasCantidad = perfil.cocinadas.length + 1;
+    const result = await marcarCocinada(receta!.id);
     setTick(t => t + 1);
-    showToast(`¡Receta cocinada! Ya llevás ${nuevasCantidad} en tu historial`, 'exito');
+    showToast(`¡Receta cocinada! Ya llevás ${result.total} en tu historial`, 'exito');
   }
 
   function handleWhatsApp() {

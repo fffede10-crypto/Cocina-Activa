@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Cocina Activa para Tiroides',
-  description: 'Recetas y guía de alimentación para personas con hipotiroidismo, hipertiroidismo y Hashimoto.',
+  title: 'Tiroides Activa',
+  description: 'Recetas y guía de alimentación organizada para hipotiroidismo, Hashimoto e hipertiroidismo. La plataforma argentina para cuidar tu tiroides.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

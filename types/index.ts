@@ -53,6 +53,14 @@ export interface Alimento {
   reemplazo_sugerido: string | null;
 }
 
+export interface JWTPayload {
+  sub: string;
+  email: string;
+  nombre: string;
+  iat?: number;
+  exp?: number;
+}
+
 export interface PerfilUsuario {
   nombre: string;
   email: string;

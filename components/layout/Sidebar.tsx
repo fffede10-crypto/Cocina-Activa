@@ -41,9 +41,8 @@ export default function Sidebar() {
     <aside className="hidden md:flex flex-col w-60 shrink-0 h-screen sticky top-0 bg-white dark:bg-stone-900 border-r border-stone-200 dark:border-stone-700">
       <div className="px-6 py-5 border-b border-stone-200 dark:border-stone-700">
         <span className="font-serif text-xl font-bold text-brand-verde dark:text-green-400 leading-tight">
-          Cocina Activa
+          Tiroides Activa
         </span>
-        <p className="text-xs text-stone-500 dark:text-stone-400 mt-0.5">para Tiroides</p>
       </div>
 
       <nav className="flex-1 overflow-y-auto px-3 py-4 space-y-0.5">

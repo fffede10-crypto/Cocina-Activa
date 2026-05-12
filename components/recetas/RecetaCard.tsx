@@ -36,10 +36,10 @@ const categoriaBorderTop: Record<string, string> = {
 };
 
 export default function RecetaCard({ receta, isFavorito = false, onFavoritoChange }: RecetaCardProps) {
-  function handleFavorito(e: React.MouseEvent) {
+  async function handleFavorito(e: React.MouseEvent) {
     e.preventDefault();
     e.stopPropagation();
-    toggleFavorito(receta.id);
+    await toggleFavorito(receta.id);
     onFavoritoChange?.();
   }
 

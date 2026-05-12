@@ -1,6 +1,5 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { getPerfil } from '@/lib/auth-local';
 import AppLayout from '@/components/layout/AppLayout';
 import { useToastContext } from '@/components/ui/ToastProvider';
 import { TrashIcon, CheckIcon } from '@heroicons/react/24/outline';
@@ -21,8 +20,9 @@ export default function ListaComprasPage() {
   const { showToast } = useToastContext();
 
   useEffect(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
+    fetch('/api/auth/perfil').then(res => {
+      if (!res.ok) { window.location.href = '/login'; }
+    }).catch(() => { window.location.href = '/login'; });
     setItems(getLista());
     setCargando(false);
 

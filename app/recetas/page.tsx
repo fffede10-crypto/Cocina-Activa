@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { getPerfil } from '@/lib/auth-local';
 import { filtrarRecetas } from '@/lib/recetas';
 import { PerfilUsuario, Receta } from '@/types';
 import AppLayout from '@/components/layout/AppLayout';
@@ -17,9 +16,10 @@ export default function RecetasPage() {
   const [tick, setTick] = useState(0);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const reloadPerfil = useCallback(() => {
-    const p = getPerfil();
-    if (!p) { window.location.href = '/login'; return; }
+  const reloadPerfil = useCallback(async () => {
+    const res = await fetch('/api/auth/perfil');
+    if (!res.ok) { window.location.href = '/login'; return; }
+    const p = await res.json();
     setPerfil(p);
     setTick(t => t + 1);
   }, []);
