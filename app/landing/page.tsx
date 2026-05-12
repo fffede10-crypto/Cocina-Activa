@@ -306,7 +306,12 @@ export default function LandingPage() {
             />
           </div>
 
-          <CTAButton text="🌿 Quiero acceder a la plataforma →" />
+          <button
+            onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all duration-200 hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+          >
+            🌿 Quiero acceder a la plataforma →
+          </button>
           <TrustRow dark />
         </div>
       </section>
