@@ -275,7 +275,7 @@ export default function LandingPage() {
 
       {/* ===== 4. SOLUCIÓN ===== */}
       <section className="bg-[#F0FDF4] py-16 px-4">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">La solución que estabas buscando</span>
             <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3 leading-snug text-[#1B4332]">
@@ -290,113 +290,48 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="space-y-6">
-
-            {/* Screenshot principal — Dashboard con accesos */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
-              <div className="bg-[#1B4332] px-4 py-2 flex items-center gap-2">
-                <div className="flex gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400" />
+          <div className="flex flex-col md:flex-row items-center gap-8 mt-10">
+            {/* Frame de celular */}
+            <div className="w-full md:w-1/2 max-w-[280px] mx-auto md:mx-0 flex-shrink-0">
+              <div className="bg-[#1B4332] rounded-t-3xl px-3 py-2 flex items-center gap-2">
+                <div className="flex gap-1">
+                  <div className="w-2 h-2 rounded-full bg-red-400" />
+                  <div className="w-2 h-2 rounded-full bg-yellow-400" />
+                  <div className="w-2 h-2 rounded-full bg-green-400" />
                 </div>
-                <div className="flex-1 bg-white/10 rounded px-2 py-0.5 text-center">
-                  <span className="text-[10px] text-green-300">plataforma-tiroides.vercel.app</span>
+                <div className="flex-1 bg-white/10 rounded text-center">
+                  <span className="text-[9px] text-green-300">tiroides activa</span>
                 </div>
               </div>
-              <Image
-                src="/screenshots/dashboard-accesos.jpg"
-                alt="Dashboard de Tiroides Activa con accesos rápidos"
-                width={600}
-                height={1000}
-                className="w-full"
-              />
-              <div className="p-4 border-t border-stone-100">
-                <p className="font-semibold text-[#1B4332] text-sm">🏠 Tu dashboard personalizado</p>
-                <p className="text-stone-500 text-xs mt-1">Accesos rápidos, receta del día y estadísticas de tu progreso</p>
+              <div className="border-2 border-t-0 border-[#1B4332] rounded-b-3xl overflow-hidden">
+                <Image
+                  src="/screenshots/dashboard-accesos.jpg"
+                  alt="Dashboard Tiroides Activa"
+                  width={280}
+                  height={490}
+                  className="w-full"
+                />
               </div>
             </div>
 
-            {/* Fila 2 — Recetas grid + Detalle */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
-                <Image
-                  src="/screenshots/recetas-grid.jpg"
-                  alt="Biblioteca de 65 recetas con filtros por condición"
-                  width={300}
-                  height={550}
-                  className="w-full"
-                />
-                <div className="p-3 border-t border-stone-100">
-                  <p className="font-semibold text-[#1B4332] text-xs">📖 65 recetas</p>
-                  <p className="text-stone-500 text-[10px] mt-0.5">Con filtros por condición</p>
-                </div>
-              </div>
-              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
-                <Image
-                  src="/screenshots/receta-detalle.jpg"
-                  alt="Detalle de receta con tip nutricional para la tiroides"
-                  width={300}
-                  height={550}
-                  className="w-full"
-                />
-                <div className="p-3 border-t border-stone-100">
-                  <p className="font-semibold text-[#1B4332] text-xs">🍳 Detalle completo</p>
-                  <p className="text-stone-500 text-[10px] mt-0.5">Tip para tu tiroides</p>
-                </div>
-              </div>
+            {/* Texto */}
+            <div className="w-full md:w-1/2">
+              <p className="font-semibold text-[#1B4332] text-lg mb-3">Tu espacio personalizado</p>
+              <ul className="space-y-3">
+                {[
+                  'Receta del día según tu condición tiroidea',
+                  'Tu badge: Hipotiroidismo, Hiper o Hashimoto',
+                  'Ritual de mañana con jugos antiinflamatorios',
+                  'Accesos rápidos a recetas, guía y lista',
+                ].map(item => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-stone-600">
+                    <span className="w-5 h-5 rounded-full bg-[#1B4332] text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-
-            {/* Fila 3 — Ingredientes + Guía alimentos */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
-                <Image
-                  src="/screenshots/receta-ingredientes.jpg"
-                  alt="Ingredientes con botón para agregar a lista de compras"
-                  width={300}
-                  height={550}
-                  className="w-full"
-                />
-                <div className="p-3 border-t border-stone-100">
-                  <p className="font-semibold text-[#1B4332] text-xs">🛒 Agregar al carrito</p>
-                  <p className="text-stone-500 text-[10px] mt-0.5">Con un toque</p>
-                </div>
-              </div>
-              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200">
-                <Image
-                  src="/screenshots/guia-alimentos.jpg"
-                  alt="Guía de alimentos verde amarillo rojo para tiroides"
-                  width={300}
-                  height={550}
-                  className="w-full"
-                />
-                <div className="p-3 border-t border-stone-100">
-                  <p className="font-semibold text-[#1B4332] text-xs">🟢 Guía alimentos</p>
-                  <p className="text-stone-500 text-[10px] mt-0.5">Verde, amarillo y rojo</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Screenshot principal — Receta del día */}
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-stone-200">
-              <Image
-                src="/screenshots/receta-del-dia.jpg"
-                alt="Receta del día personalizada con mensaje para tu tiroides"
-                width={600}
-                height={900}
-                className="w-full"
-              />
-              <div className="p-4 border-t border-stone-100">
-                <p className="font-semibold text-[#1B4332] text-sm">✨ Receta del día personalizada</p>
-                <p className="text-stone-500 text-xs mt-1">Cada día una receta diferente con un mensaje específico para tu condición tiroidea</p>
-              </div>
-            </div>
-
           </div>
-
-          <p className="text-center text-stone-500 text-sm mt-6">
-            📱 Así se ve tu plataforma desde el celular — sin instalar nada
-          </p>
         </div>
       </section>
 
@@ -426,6 +361,16 @@ export default function LandingPage() {
               Hoy: <span className="text-orange-400">$19.999</span>
             </p>
           </div>
+
+          <div className="mt-8 max-w-[300px] mx-auto">
+            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
+              <span className="text-[10px] text-green-300">📖 Biblioteca de recetas</span>
+            </div>
+            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
+              <Image src="/screenshots/recetas-grid.jpg" alt="65 recetas organizadas" width={300} height={500} className="w-full" />
+            </div>
+            <p className="text-center text-xs text-stone-500 mt-2">Así se ven tus 65 recetas con filtros</p>
+          </div>
         </div>
       </section>
 
@@ -446,6 +391,16 @@ export default function LandingPage() {
                 <p className="text-stone-600 text-sm leading-relaxed">{r.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 max-w-[300px] mx-auto">
+            <div className="bg-orange-500 rounded-t-2xl px-3 py-1.5 text-center">
+              <span className="text-[10px] text-white font-semibold">✨ Receta del día</span>
+            </div>
+            <div className="border-2 border-t-0 border-orange-500 rounded-b-2xl overflow-hidden">
+              <Image src="/screenshots/receta-del-dia.jpg" alt="Receta del día personalizada" width={300} height={520} className="w-full" />
+            </div>
+            <p className="text-center text-xs text-stone-500 mt-2">Mensaje personalizado según tu condición</p>
           </div>
         </div>
       </section>
@@ -468,6 +423,16 @@ export default function LandingPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 max-w-[300px] mx-auto">
+            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
+              <span className="text-[10px] text-green-300">🛒 Lista de compras inteligente</span>
+            </div>
+            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
+              <Image src="/screenshots/receta-ingredientes.jpg" alt="Agregar ingredientes a lista de compras" width={300} height={520} className="w-full" />
+            </div>
+            <p className="text-center text-xs text-stone-500 mt-2">Tocás "+" y el ingrediente va directo a tu lista</p>
           </div>
         </div>
       </section>
@@ -499,6 +464,16 @@ export default function LandingPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10 max-w-[300px] mx-auto">
+            <div className="bg-[#1B4332] rounded-t-2xl px-3 py-1.5 text-center">
+              <span className="text-[10px] text-green-300">🟢 Guía de alimentos</span>
+            </div>
+            <div className="border-2 border-t-0 border-[#1B4332] rounded-b-2xl overflow-hidden">
+              <Image src="/screenshots/guia-alimentos.jpg" alt="Guía de alimentos verde amarillo rojo" width={300} height={520} className="w-full" />
+            </div>
+            <p className="text-center text-xs text-stone-500 mt-2">Verde / Amarillo / Rojo — con razón nutricional</p>
           </div>
         </div>
       </section>
