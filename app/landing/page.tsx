@@ -154,16 +154,26 @@ const PASOS = [
   { num: '4', titulo: 'Ingresás y empezás', desc: 'Completás tu perfil y accedés a las 65 recetas personalizadas.' },
 ];
 
+function handleClickCompra() {
+  if (typeof window !== 'undefined' && (window as any).fbq) {
+    (window as any).fbq('track', 'InitiateCheckout', {
+      content_name: 'Tiroides Activa',
+      currency: 'ARS',
+      value: 19999,
+      num_items: 1,
+    });
+  }
+  window.open(CHECKOUT_URL, '_blank');
+}
+
 function CTAButton({ text, className = '' }: { text: string; className?: string }) {
   return (
-    <a
-      href={CHECKOUT_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all duration-200 hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 ${className}`}
+    <button
+      onClick={handleClickCompra}
+      className={`inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-10 py-5 rounded-2xl shadow-xl transition-all duration-200 hover:shadow-2xl hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${className}`}
     >
       {text}
-    </a>
+    </button>
   );
 }
 
@@ -217,6 +227,17 @@ export default function LandingPage() {
     const t1 = setTimeout(mostrar, 8000);
     const interval = setInterval(mostrar, 45000);
     return () => { clearTimeout(t1); clearInterval(interval); };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'ViewContent', {
+        content_name: 'Tiroides Activa — Landing Page',
+        content_category: 'Health & Wellness',
+        currency: 'ARS',
+        value: 19999,
+      });
+    }
   }, []);
 
   useEffect(() => {
@@ -495,14 +516,12 @@ export default function LandingPage() {
 
           {/* CTA */}
           <div className="mt-8 text-center">
-            <a
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-base px-8 py-4 rounded-full transition-colors shadow-lg shadow-orange-200"
+            <button
+              onClick={handleClickCompra}
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-semibold text-base px-8 py-4 rounded-full transition-colors shadow-lg shadow-orange-200 cursor-pointer"
             >
               🌿 Quiero acceder a la plataforma →
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -570,14 +589,12 @@ export default function LandingPage() {
               <p className="font-mono text-4xl font-bold text-orange-400 tabular-nums">{tiempo}</p>
             </div>
 
-            <a
-              href={CHECKOUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-8 py-5 rounded-2xl shadow-xl transition-all duration-200"
+            <button
+              onClick={handleClickCompra}
+              className="inline-block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl px-8 py-5 rounded-2xl shadow-xl transition-all duration-200 cursor-pointer"
             >
               🌿 Sí, quiero acceder a Tiroides Activa →
-            </a>
+            </button>
           </div>
 
           <TrustRow dark />
