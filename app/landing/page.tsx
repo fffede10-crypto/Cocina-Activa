@@ -681,88 +681,130 @@ export default function LandingPage() {
       <section className="py-16 px-5 bg-[#1B4332]" id="comprar">
         <div className="max-w-lg mx-auto">
 
-          <div className="text-center mb-6">
+          <div className="text-center mb-2">
             <span className="bg-orange-500 text-white text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full">
               🔥 OFERTA ESPECIAL — SOLO POR HOY {hoyMayus}
             </span>
           </div>
 
-          <h2 className="font-serif text-3xl md:text-4xl text-white text-center mb-3 leading-tight">
+          <h2 className="font-serif text-3xl md:text-4xl text-white text-center mb-1 leading-tight">
             Accedé ahora y empezá a
             <em className="not-italic text-orange-400"> comer bien para tu tiroides</em>
           </h2>
-          <p className="text-green-300 text-center text-sm mb-8">
+          <p className="text-green-300 text-center text-sm mb-2">
             Tu lugar estará reservado durante los próximos 15 minutos.
-            Si no accedés, el descuento pasará a la siguiente persona.
           </p>
 
-          <div className="bg-white/5 border border-white/15 rounded-2xl p-6 mb-6">
+          {/* CARD DE PRECIO */}
+          <div className="max-w-sm mx-auto mt-8">
+            <div className="relative bg-white rounded-3xl border-2 border-[#1B4332] shadow-2xl overflow-hidden">
 
-            <div className="text-center mb-6">
-              <p className="text-green-300 text-sm line-through opacity-70 mb-1">Precio normal: $79.999</p>
-              <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                75% OFF — SOLO HOY {hoyMayus}
-              </span>
-              <p className="font-serif text-6xl text-white mt-3 leading-none">$19.999</p>
-              <p className="text-green-300 text-xs mt-1">ARS · Pago único · Sin suscripciones</p>
-            </div>
-
-            <div className="bg-orange-500 rounded-xl p-4 mb-6 text-center">
-              <p className="text-white text-xs font-bold uppercase tracking-wide mb-2">
-                ⚡ OFERTA HOY {hoyMayus} — Tu lugar reservado por:
-              </p>
-              <p className="text-white font-bold text-5xl tracking-widest tabular-nums">
-                {String(minutos).padStart(2, '0')} : {String(segundos).padStart(2, '0')}
-              </p>
-              <p className="text-orange-100 text-xs mt-1">Minutos · Segundos</p>
-            </div>
-
-            <button
-              onClick={handleClickCompra}
-              className="w-full bg-[#25D366] hover:bg-green-600 text-white font-bold text-lg py-4 rounded-xl transition-colors shadow-lg mb-4 cursor-pointer"
-            >
-              🌿 Quiero acceder ahora →
-            </button>
-
-            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-green-300 mb-4">
-              <span>🔒 Compra 100% segura</span>
-              <span>·</span>
-              <span>⚡ Acceso inmediato</span>
-              <span>·</span>
-              <span>📱 Desde cualquier dispositivo</span>
-            </div>
-
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <span className="text-green-300 text-xs">Pagás con:</span>
-              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full font-medium">💳 Mercado Pago</span>
-              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full">Visa</span>
-              <span className="bg-white/10 text-white text-xs px-3 py-1 rounded-full">Mastercard</span>
-            </div>
-
-            <div className="border-t border-white/10 pt-4 space-y-2">
-              <div className="flex items-center gap-2 text-xs text-green-300">
-                <span>✅</span>
-                <span>Tu compra incluye <strong className="text-white">futuras actualizaciones gratuitas</strong> dentro de la plataforma</span>
+              {/* Badge MÁS ELEGIDO */}
+              <div className="absolute -top-0 left-1/2 -translate-x-1/2">
+                <span className="bg-[#F97316] text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-md whitespace-nowrap">
+                  ⭐ MÁS ELEGIDO
+                </span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-green-300">
-                <span>📲</span>
-                <span><strong className="text-white">+500 mujeres</strong> ya usan la plataforma y sumando cada día</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs text-green-300">
-                <span>🔒</span>
-                <span>Pago 100% seguro procesado por <strong className="text-white">Mercado Pago</strong></span>
+
+              <div className="pt-8 px-6 pb-6">
+
+                {/* Plan label */}
+                <p className="text-[#57534E] text-xs font-medium uppercase tracking-wide mb-1">
+                  Plan
+                </p>
+                <h3 className="font-serif text-2xl font-bold text-[#1C1917] mb-1">
+                  Acceso Completo
+                </h3>
+                <p className="text-[#57534E] text-xs mb-4">
+                  65 recetas + guía de alimentos + 5 bonos exclusivos
+                </p>
+
+                {/* Precio */}
+                <div className="mb-5">
+                  <p className="text-[#57534E] text-sm line-through mb-0.5">$79.999</p>
+                  <p className="font-serif text-5xl font-bold text-[#1B4332] leading-none">
+                    $19.999
+                  </p>
+                  <p className="text-[#F97316] text-sm font-bold mt-1">Ahorrás 75%</p>
+                </div>
+
+                {/* Contador urgencia */}
+                <div className="bg-[#F97316] rounded-xl px-4 py-2.5 mb-5 text-center">
+                  <p className="text-white text-xs font-medium mb-0.5">
+                    ⏱️ Oferta válida por:
+                  </p>
+                  <p className="text-white font-bold text-2xl tracking-widest">
+                    {String(minutos).padStart(2,'0')} : {String(segundos).padStart(2,'0')}
+                  </p>
+                </div>
+
+                {/* Lo que incluye */}
+                <div className="space-y-2 mb-5">
+                  {[
+                    '65 recetas organizadas para tu condición',
+                    'Filtros por hipotiroidismo, Hashimoto e hiper',
+                    'Guía de alimentos verde / amarillo / rojo',
+                    'Lista de compras inteligente con un toque',
+                    'Receta del día personalizada cada mañana',
+                    'Acceso vitalicio desde cualquier dispositivo',
+                    'Actualizaciones futuras gratuitas incluidas',
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <span className="text-[#1B4332] font-bold text-sm mt-0.5 flex-shrink-0">✓</span>
+                      <span className="text-[#57534E] text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Bonos exclusivos */}
+                <div className="bg-[#F0FDF4] rounded-2xl p-4 mb-5">
+                  <p className="text-[#1B4332] text-xs font-bold uppercase tracking-wide mb-3">
+                    🎁 BONOS EXCLUSIVOS:
+                  </p>
+                  <div className="space-y-2">
+                    {[
+                      'Jugos Verdes Antiinflamatorios (Bono 1)',
+                      'Lista de Compras Semanal (Bono 2)',
+                      'Receta del Día Personalizada (Bono 3)',
+                      'Ritual de Mañana para Tiroides (Bono 4)',
+                      'Guía del Intestino y Probióticos (Bono 5)',
+                    ].map((bono, i) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <span className="text-[#F97316] text-sm flex-shrink-0">🎁</span>
+                        <span className="text-[#57534E] text-xs">{bono}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-[#1B4332] text-xs font-semibold mt-3">
+                    🌿 Todo incluido · Sin costos adicionales
+                  </p>
+                </div>
+
+                {/* Botón CTA */}
+                <button
+                  onClick={handleClickCompra}
+                  className="w-full bg-[#1B4332] hover:bg-emerald-900 text-white font-bold text-base py-4 rounded-2xl transition-colors shadow-lg mb-3"
+                >
+                  Sí, quiero el Acceso Completo →
+                </button>
+
+                {/* Trust */}
+                <div className="flex items-center justify-center gap-1.5 text-xs text-[#57534E]">
+                  <span>🔒</span>
+                  <span>Pago seguro · Mercado Pago</span>
+                </div>
+
               </div>
             </div>
           </div>
 
-          <div className="bg-white/5 border border-white/15 rounded-2xl p-5 text-center">
-            <p className="text-3xl mb-2">🛡️</p>
-            <p className="font-serif text-xl text-white mb-2">Garantía Total de 7 Días</p>
-            <p className="text-green-300 text-sm leading-relaxed">
-              Si en los primeros 7 días no quedás 100% satisfecha con la plataforma,
-              te devolvemos todo el dinero sin preguntas.
-              <strong className="text-white"> Es riesgo CERO para vos.</strong>
-            </p>
+          {/* Trust badges debajo de la card */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-sm text-[#86efac]">
+            <span>⭐⭐⭐⭐⭐ 4.9/5</span>
+            <span>·</span>
+            <span>🛡️ Garantía 7 días</span>
+            <span>·</span>
+            <span>📲 +500 mujeres</span>
           </div>
 
         </div>
