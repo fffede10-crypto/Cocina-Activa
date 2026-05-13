@@ -679,26 +679,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== 11. GARANTÍA ===== */}
-      <section className="bg-[#FAFAF7] py-16 px-4">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-8">
-            Garantía Total de 60 Días
-          </h2>
-          <div className="bg-white border-2 border-[#1B4332] rounded-2xl p-8 text-center shadow-sm">
-            <p className="text-5xl mb-4">🛡️</p>
-            <p className="font-bold text-xl text-stone-900 mb-4">Tu inversión está 100% protegida.</p>
-            <p className="text-stone-600 leading-relaxed">
-              Tenés 60 días para explorar la plataforma, probar las recetas y evaluar
-              los resultados. Si no quedás plenamente satisfecha, pedís el reembolso
-              y te devolvemos todo. Es riesgo{' '}
-              <strong className="text-stone-900">CERO</strong>{' '}
-              para vos y compromiso total de nuestra parte.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* ===== 12. QUÉ INCLUYE TU COMPRA ===== */}
       <section className="bg-[#1B4332] py-16 px-4 text-white">
         <div className="max-w-3xl mx-auto">
