@@ -677,45 +677,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== 9. TESTIMONIOS ===== */}
-      <section className="bg-[#FAFAF7] py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">
-              Lo que dicen nuestras usuarias
-            </span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3">
-              Mujeres que ya organizaron su alimentación con Tiroides Activa
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIOS.map((t, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100 flex flex-col">
-                <div className="text-yellow-400 text-sm mb-3">★★★★★</div>
-                <p className="text-stone-600 text-sm leading-relaxed italic flex-1 mb-4">{t.texto}</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#1B4332] text-white font-bold flex items-center justify-center text-sm flex-shrink-0">
-                    {t.inicial}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-stone-900 text-sm">{t.nombre} · {t.ciudad}</p>
-                    <p className="text-stone-400 text-xs">{t.condicion} ✓ Compra verificada</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* ===== 10. CONTADOR PERSONAS ===== */}
-      <section className="bg-[#1B4332] py-14 px-4 text-center text-white">
-        <p className="font-serif text-6xl md:text-7xl font-bold text-orange-400 mb-2">+500</p>
-        <p className="text-xl text-white/80">mujeres ya están usando Tiroides Activa</p>
-        <p className="text-white/50 mt-1 text-sm">y sumando cada día 🌿</p>
-      </section>
-
       {/* ===== 10. PRECIO + URGENCIA ===== */}
       <section className="py-16 px-5 bg-[#1B4332]" id="comprar">
         <div className="max-w-lg mx-auto">
@@ -802,6 +763,140 @@ export default function LandingPage() {
               te devolvemos todo el dinero sin preguntas.
               <strong className="text-white"> Es riesgo CERO para vos.</strong>
             </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* MURO DE TESTIMONIOS */}
+      <section className="py-16 px-5 bg-[#FAFAF7]">
+        <div className="max-w-3xl mx-auto">
+
+          {/* Header */}
+          <h2 className="font-serif text-3xl text-[#1B4332] text-center mb-3 leading-tight">
+            Ellas ya organizaron su alimentación
+            con <em className="not-italic text-[#F97316]">Tiroides Activa</em>
+          </h2>
+          <p className="text-[#57534E] text-center text-sm mb-4">
+            Mujeres reales que empezaron a sentirse mejor con recetas simples y organizadas
+          </p>
+
+          {/* Estrellas + cantidad */}
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="flex">
+              {[1,2,3,4,5].map(i => (
+                <span key={i} className="text-yellow-400 text-lg">★</span>
+              ))}
+            </div>
+            <span className="text-[#57534E] text-sm font-medium">4.9 · 47 reseñas</span>
+          </div>
+
+          {/* Grid masonry 2 columnas */}
+          <div className="columns-2 gap-3 space-y-3">
+            {[
+              {
+                nombre: 'María Elena G.',
+                ciudad: 'Buenos Aires',
+                condicion: 'Hipotiroidismo',
+                texto: 'Hace 3 semanas que uso la plataforma y la diferencia es impresionante. Mis valores de TSH mejoraron y mi endocrinóloga me preguntó qué había cambiado. Los desayunos con avena y semillas de calabaza se transformaron en mi ritual de cada mañana. ¡Por fin algo que funciona y encima es rico! 🙌',
+                emoji: '🥣',
+                color: 'bg-amber-50',
+              },
+              {
+                nombre: 'Claudia F.',
+                ciudad: 'Córdoba',
+                condicion: 'Hashimoto',
+                texto: 'Tengo Hashimoto hace 5 años y nunca había encontrado recetas que realmente se adaptaran a mis restricciones. Sin gluten, sin lácteos y encima ricas. Mi familia ni se da cuenta que son "recetas especiales". La guía de alimentos es un golazo. 💚',
+                emoji: '🥗',
+                color: 'bg-green-50',
+              },
+              {
+                nombre: 'Patricia M.',
+                ciudad: 'Rosario',
+                condicion: 'Hipotiroidismo',
+                texto: 'Lo que más me gustó es que los ingredientes los consigo en cualquier verdulería. No tuve que comprar nada raro ni gastar de más. En un mes bajé 3 kilos sin hacer dieta, solo siguiendo las recetas del almuerzo y la cena. La sopa de lentejas con cúrcuma es mi favorita. 100% recomendada.',
+                emoji: '🍲',
+                color: 'bg-orange-50',
+              },
+              {
+                nombre: 'Valeria R.',
+                ciudad: 'Mendoza',
+                condicion: 'Hashimoto',
+                texto: 'Estaba agotada de buscar en Google y encontrar información contradictoria. Acá todo está organizado, explicado y con ingredientes argentinos reales. La lista de compras que se genera sola desde las recetas me salvó la semana. ¡Gracias! ✨',
+                emoji: '🛒',
+                color: 'bg-blue-50',
+              },
+              {
+                nombre: 'Gabriela S.',
+                ciudad: 'Tucumán',
+                condicion: 'Hipertiroidismo',
+                texto: 'Tengo hipertiroidismo y encontrar postres que pueda comer sin sentirme mal era misión imposible. Probé la mousse de chocolate con palta y no lo podía creer: riquísima y sin un solo ingrediente que me haga mal. Mi familia tampoco se dio cuenta de la diferencia. 🍫',
+                emoji: '🍮',
+                color: 'bg-pink-50',
+              },
+              {
+                nombre: 'Laura B.',
+                ciudad: 'Mar del Plata',
+                condicion: 'Hipotiroidismo',
+                texto: 'La receta del día es lo mejor. Cada mañana ya sé qué voy a cocinar y el mensaje personalizado para mi hipotiroidismo me da contexto de por qué esa receta me hace bien. Es como tener una nutricionista en el bolsillo. Llevo 2 meses y no lo cambio por nada. 💪',
+                emoji: '☀️',
+                color: 'bg-yellow-50',
+              },
+              {
+                nombre: 'Romina V.',
+                ciudad: 'La Plata',
+                condicion: 'Hashimoto',
+                texto: 'Pensé que iba a ser una plataforma más pero me sorprendió. Los jugos verdes de la mañana se convirtieron en mi hábito y ya noto la diferencia en la energía. El agua con limón y cúrcuma es lo primero que tomo cada día. Muy recomendada para Hashimoto. 🌿',
+                emoji: '🥤',
+                color: 'bg-emerald-50',
+              },
+              {
+                nombre: 'Daniela C.',
+                ciudad: 'Salta',
+                condicion: 'Hipotiroidismo',
+                texto: 'Me diagnosticaron hipotiroidismo hace 8 meses y estaba perdida con la alimentación. Mi médico solo me daba la receta de Eutirox y nada más. Acá encontré la guía de alimentos que me faltaba. Ya sé qué comer, qué evitar y por qué. Eso no tiene precio. ⭐',
+                emoji: '📖',
+                color: 'bg-purple-50',
+              },
+            ].map((t, i) => (
+              <div
+                key={i}
+                className={`${t.color} rounded-2xl p-4 break-inside-avoid mb-3 border border-white shadow-sm`}
+              >
+                <div className="text-4xl mb-3 text-center">{t.emoji}</div>
+                <div className="flex mb-2">
+                  {[1,2,3,4,5].map(s => (
+                    <span key={s} className="text-yellow-400 text-sm">★</span>
+                  ))}
+                </div>
+                <p className="text-[#57534E] text-xs leading-relaxed mb-3 italic">
+                  &ldquo;{t.texto}&rdquo;
+                </p>
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-[#1B4332] flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+                    {t.nombre[0]}
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-[#1C1917]">{t.nombre}</p>
+                    <p className="text-[10px] text-[#57534E]">{t.ciudad} · {t.condicion}</p>
+                  </div>
+                  <span className="ml-auto text-[10px] text-[#1B4332] font-semibold">✓ Verificada</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA debajo */}
+          <div className="text-center mt-10">
+            <p className="text-[#57534E] text-sm mb-4">
+              Vos también podés empezar hoy 💚
+            </p>
+            <button
+              onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-semibold text-base px-8 py-4 rounded-full transition-colors shadow-lg shadow-orange-200"
+            >
+              🌿 QUIERO EMPEZAR HOY →
+            </button>
           </div>
 
         </div>
