@@ -378,31 +378,159 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ===== 5. QUÉ INCLUYE ===== */}
-      <section className="bg-white py-16 px-4">
+      {/* SECCIÓN MOCKUPS 3D */}
+      <section className="py-16 px-5 bg-[#FAFAF7]">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase">Acceso Inmediato</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mt-3">¿Qué vas a encontrar adentro?</h2>
+
+          {/* Header */}
+          <p className="text-xs font-bold tracking-widest text-[#F97316] uppercase mb-3 text-center">
+            🎁 BONOS EXCLUSIVOS
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl text-[#1B4332] text-center mb-3 leading-tight">
+            Comprando hoy te llevás todo esto
+          </h2>
+          <p className="text-[#57534E] text-center text-base mb-4 leading-relaxed">
+            Todo incluido en tu acceso vitalicio — sin costos adicionales
+          </p>
+
+          {/* Badge solo en plan completo */}
+          <div className="flex justify-center mb-10">
+            <span className="bg-[#1B4332] text-white text-xs font-bold px-4 py-2 rounded-full">
+              🌿 Todo incluido en el acceso
+            </span>
           </div>
-          <div className="space-y-3">
-            {INCLUYE.map((item, i) => (
-              <div key={i} className="flex items-start justify-between gap-4 bg-green-50 rounded-xl p-4 border border-green-100">
-                <div className="flex-1">
-                  <p className="font-bold text-stone-900">✅ {item.item}</p>
-                  <p className="text-stone-600 text-sm mt-0.5">{item.desc}</p>
+
+          {/* MOCKUP PRINCIPAL — 65 Recetas (destacado, ancho completo) */}
+          <div className="mb-6">
+            <div className="relative group">
+              <Image
+                src="/mockups/mockup-recetas.png"
+                alt="65 Recetas para Tiroides — incluido en tu acceso"
+                width={800}
+                height={500}
+                className="w-full rounded-2xl shadow-lg group-hover:scale-[1.02] transition-transform duration-300"
+              />
+              <div className="mt-3 text-center">
+                <p className="font-semibold text-[#1B4332] text-lg">65 Recetas para Tiroides</p>
+                <p className="text-[#57534E] text-sm">Desayunos, almuerzos, cenas, postres y jugos organizados para tu condición</p>
+                <div className="flex items-center justify-center gap-2 mt-1">
+                  <span className="text-[#57534E] text-sm line-through">Valor: $25.000</span>
+                  <span className="bg-[#1B4332] text-white text-xs px-2 py-0.5 rounded-full font-bold">HOY GRATIS</span>
                 </div>
-                <span className="text-stone-400 line-through text-sm whitespace-nowrap flex-shrink-0 pt-0.5">
-                  {item.valor}
-                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* GRID 2x2 — Guía alimentos + Jugos + Lista + Receta del día */}
+          <div className="grid grid-cols-2 gap-4 mb-6">
+            {[
+              {
+                img: '/mockups/mockup-guia-alimentos.png',
+                alt: 'Guía de Alimentos Verde Amarillo Rojo',
+                titulo: 'Guía de Alimentos',
+                desc: 'Verde, amarillo y rojo para tu condición',
+                valor: '$15.000',
+              },
+              {
+                img: '/mockups/mockup-jugos.png',
+                alt: 'Jugos Verdes Antiinflamatorios — Bono 1',
+                titulo: 'Jugos Verdes',
+                desc: '5 jugos especiales para la tiroides',
+                valor: '$8.000',
+              },
+              {
+                img: '/mockups/mockup-lista-compras.png',
+                alt: 'Lista de Compras Inteligente — Bono 2',
+                titulo: 'Lista de Compras',
+                desc: 'Organizá tu semana con un toque',
+                valor: '$8.000',
+              },
+              {
+                img: '/mockups/mockup-receta-dia.png',
+                alt: 'Receta del Día Personalizada — Bono 3',
+                titulo: 'Receta del Día',
+                desc: 'Personalizada para tu condición',
+                valor: '$5.000',
+              },
+            ].map(item => (
+              <div key={item.titulo} className="group">
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  width={400}
+                  height={300}
+                  className="w-full rounded-xl shadow-md group-hover:scale-[1.03] transition-transform duration-300"
+                />
+                <div className="mt-2 text-center">
+                  <p className="font-semibold text-[#1B4332] text-sm">{item.titulo}</p>
+                  <p className="text-[#57534E] text-xs">{item.desc}</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-1">
+                    <span className="text-[#57534E] text-xs line-through">{item.valor}</span>
+                    <span className="bg-[#1B4332] text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">GRATIS</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
-          <div className="mt-8 bg-[#1B4332] text-white rounded-2xl p-6 text-center">
-            <p className="text-white/60 line-through text-sm mb-1">Valor total: $86.000</p>
-            <p className="font-serif text-3xl font-bold">
-              Hoy: <span className="text-orange-400">$19.999</span>
+
+          {/* GRID 2 mockups finales — Ritual + Intestino */}
+          <div className="grid grid-cols-2 gap-4 mb-10">
+            {[
+              {
+                img: '/mockups/mockup-ritual.png',
+                alt: 'Ritual de Mañana — Bono 4',
+                titulo: 'Ritual de Mañana',
+                desc: 'Agua con cúrcuma, jugo verde y probiótico',
+                valor: '$5.000',
+              },
+              {
+                img: '/mockups/mockup-intestino.png',
+                alt: 'Guía del Intestino — Bono 5',
+                titulo: 'Guía del Intestino',
+                desc: 'Probióticos y permeabilidad intestinal',
+                valor: '$5.000',
+              },
+            ].map(item => (
+              <div key={item.titulo} className="group">
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  width={400}
+                  height={300}
+                  className="w-full rounded-xl shadow-md group-hover:scale-[1.03] transition-transform duration-300"
+                />
+                <div className="mt-2 text-center">
+                  <p className="font-semibold text-[#1B4332] text-sm">{item.titulo}</p>
+                  <p className="text-[#57534E] text-xs">{item.desc}</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-1">
+                    <span className="text-[#57534E] text-xs line-through">{item.valor}</span>
+                    <span className="bg-[#1B4332] text-white text-[10px] px-1.5 py-0.5 rounded-full font-bold">GRATIS</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* VALOR TOTAL */}
+          <div className="bg-white border border-[#E7E5E4] rounded-2xl p-6 text-center mb-8 shadow-sm">
+            <p className="text-[#57534E] text-sm mb-1">Valor total de todo lo que recibís</p>
+            <p className="text-[#57534E] text-lg line-through mb-1">$71.000</p>
+            <p className="font-serif text-4xl text-[#1B4332] font-bold">
+              Hoy: <span className="text-[#F97316]">$19.999</span>
             </p>
+            <p className="text-[#57534E] text-xs mt-2">
+              Acceso vitalicio · Sin suscripciones · Actualizaciones gratuitas incluidas
+            </p>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <button
+              onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-orange-600 text-white font-semibold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-orange-200"
+            >
+              🌿 Quiero acceder con todo incluido →
+            </button>
           </div>
 
         </div>
