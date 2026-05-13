@@ -799,7 +799,7 @@ export default function LandingPage() {
                 ciudad: 'Buenos Aires',
                 condicion: 'Hipotiroidismo',
                 texto: 'Hace 3 semanas que uso la plataforma y la diferencia es impresionante. Mis valores de TSH mejoraron y mi endocrinóloga me preguntó qué había cambiado. Los desayunos con avena y semillas de calabaza se transformaron en mi ritual de cada mañana. ¡Por fin algo que funciona y encima es rico! 🙌',
-                emoji: '🥣',
+                foto: '/recetas/receta-1.jpg',
                 color: 'bg-amber-50',
               },
               {
@@ -807,7 +807,7 @@ export default function LandingPage() {
                 ciudad: 'Córdoba',
                 condicion: 'Hashimoto',
                 texto: 'Tengo Hashimoto hace 5 años y nunca había encontrado recetas que realmente se adaptaran a mis restricciones. Sin gluten, sin lácteos y encima ricas. Mi familia ni se da cuenta que son "recetas especiales". La guía de alimentos es un golazo. 💚',
-                emoji: '🥗',
+                foto: '/recetas/receta-20.jpg',
                 color: 'bg-green-50',
               },
               {
@@ -815,7 +815,7 @@ export default function LandingPage() {
                 ciudad: 'Rosario',
                 condicion: 'Hipotiroidismo',
                 texto: 'Lo que más me gustó es que los ingredientes los consigo en cualquier verdulería. No tuve que comprar nada raro ni gastar de más. En un mes bajé 3 kilos sin hacer dieta, solo siguiendo las recetas del almuerzo y la cena. La sopa de lentejas con cúrcuma es mi favorita. 100% recomendada.',
-                emoji: '🍲',
+                foto: '/recetas/receta-16.jpg',
                 color: 'bg-orange-50',
               },
               {
@@ -823,7 +823,7 @@ export default function LandingPage() {
                 ciudad: 'Mendoza',
                 condicion: 'Hashimoto',
                 texto: 'Estaba agotada de buscar en Google y encontrar información contradictoria. Acá todo está organizado, explicado y con ingredientes argentinos reales. La lista de compras que se genera sola desde las recetas me salvó la semana. ¡Gracias! ✨',
-                emoji: '🛒',
+                foto: '/recetas/receta-18.jpg',
                 color: 'bg-blue-50',
               },
               {
@@ -831,7 +831,7 @@ export default function LandingPage() {
                 ciudad: 'Tucumán',
                 condicion: 'Hipertiroidismo',
                 texto: 'Tengo hipertiroidismo y encontrar postres que pueda comer sin sentirme mal era misión imposible. Probé la mousse de chocolate con palta y no lo podía creer: riquísima y sin un solo ingrediente que me haga mal. Mi familia tampoco se dio cuenta de la diferencia. 🍫',
-                emoji: '🍮',
+                foto: '/recetas/receta-46.jpg',
                 color: 'bg-pink-50',
               },
               {
@@ -839,7 +839,7 @@ export default function LandingPage() {
                 ciudad: 'Mar del Plata',
                 condicion: 'Hipotiroidismo',
                 texto: 'La receta del día es lo mejor. Cada mañana ya sé qué voy a cocinar y el mensaje personalizado para mi hipotiroidismo me da contexto de por qué esa receta me hace bien. Es como tener una nutricionista en el bolsillo. Llevo 2 meses y no lo cambio por nada. 💪',
-                emoji: '☀️',
+                foto: '/recetas/receta-3.jpg',
                 color: 'bg-yellow-50',
               },
               {
@@ -847,7 +847,7 @@ export default function LandingPage() {
                 ciudad: 'La Plata',
                 condicion: 'Hashimoto',
                 texto: 'Pensé que iba a ser una plataforma más pero me sorprendió. Los jugos verdes de la mañana se convirtieron en mi hábito y ya noto la diferencia en la energía. El agua con limón y cúrcuma es lo primero que tomo cada día. Muy recomendada para Hashimoto. 🌿',
-                emoji: '🥤',
+                foto: '/recetas/receta-61.jpg',
                 color: 'bg-emerald-50',
               },
               {
@@ -855,7 +855,7 @@ export default function LandingPage() {
                 ciudad: 'Salta',
                 condicion: 'Hipotiroidismo',
                 texto: 'Me diagnosticaron hipotiroidismo hace 8 meses y estaba perdida con la alimentación. Mi médico solo me daba la receta de Eutirox y nada más. Acá encontré la guía de alimentos que me faltaba. Ya sé qué comer, qué evitar y por qué. Eso no tiene precio. ⭐',
-                emoji: '📖',
+                foto: '/recetas/receta-25.jpg',
                 color: 'bg-purple-50',
               },
             ].map((t, i) => (
@@ -863,7 +863,15 @@ export default function LandingPage() {
                 key={i}
                 className={`${t.color} rounded-2xl p-4 break-inside-avoid mb-3 border border-white shadow-sm`}
               >
-                <div className="text-4xl mb-3 text-center">{t.emoji}</div>
+                <div className="w-full h-32 rounded-xl overflow-hidden mb-3">
+                  <Image
+                    src={t.foto}
+                    alt={`Receta de ${t.nombre}`}
+                    width={300}
+                    height={128}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div className="flex mb-2">
                   {[1,2,3,4,5].map(s => (
                     <span key={s} className="text-yellow-400 text-sm">★</span>
