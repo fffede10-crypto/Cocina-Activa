@@ -719,6 +719,18 @@ export default function LandingPage() {
                   65 recetas + guía de alimentos + 5 bonos exclusivos
                 </p>
 
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="bg-[#F0FDF4] border border-[#1B4332] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full">
+                    💳 Pago único
+                  </span>
+                  <span className="bg-[#F0FDF4] border border-[#1B4332] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full">
+                    ♾️ Sin suscripciones
+                  </span>
+                  <span className="bg-[#F0FDF4] border border-[#1B4332] text-[#1B4332] text-xs font-semibold px-3 py-1 rounded-full">
+                    🔄 Actualizaciones gratis
+                  </span>
+                </div>
+
                 {/* Precio */}
                 <div className="mb-5">
                   <p className="text-[#57534E] text-sm line-through mb-0.5">$79.999</p>
