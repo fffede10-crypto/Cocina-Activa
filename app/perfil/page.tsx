@@ -49,6 +49,12 @@ export default function PerfilPage() {
   const [sintomas, setSintomas] = useState<string[]>([]);
   const [guardado, setGuardado] = useState(false);
 
+  const [cambioPass, setCambioPass] = useState(false);
+  const [passActual, setPassActual] = useState('');
+  const [passNueva, setPassNueva] = useState('');
+  const [passConfirmar, setPassConfirmar] = useState('');
+  const [guardandoPass, setGuardandoPass] = useState(false);
+
   useEffect(() => {
     fetch('/api/auth/perfil')
       .then(res => {
@@ -68,6 +74,37 @@ export default function PerfilPage() {
 
   function toggleItem(list: string[], setList: (v: string[]) => void, value: string) {
     setList(list.includes(value) ? list.filter(x => x !== value) : [...list, value]);
+  }
+
+  async function cambiarPassword() {
+    if (passNueva !== passConfirmar) {
+      showToast('Las contraseñas no coinciden', 'info');
+      return;
+    }
+    if (passNueva.length < 8) {
+      showToast('La nueva contraseña debe tener al menos 8 caracteres', 'info');
+      return;
+    }
+    setGuardandoPass(true);
+    try {
+      const res = await fetch('/api/auth/cambiar-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ passwordActual: passActual, passwordNueva: passNueva }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        showToast(data.error || 'Error al cambiar la contraseña', 'info');
+      } else {
+        showToast('Contraseña actualizada correctamente', 'exito');
+        setCambioPass(false);
+        setPassActual('');
+        setPassNueva('');
+        setPassConfirmar('');
+      }
+    } finally {
+      setGuardandoPass(false);
+    }
   }
 
   async function guardar() {
@@ -238,6 +275,64 @@ export default function PerfilPage() {
             </div>
           </div>
         )}
+
+        {/* Cambiar contraseña */}
+        <div className="bg-white dark:bg-stone-900 rounded-2xl p-5 shadow-sm space-y-4">
+          <div className="flex justify-between items-center">
+            <h3 className="font-semibold text-stone-900 dark:text-stone-100">Cambiar contraseña</h3>
+            {!cambioPass && (
+              <Button variant="ghost" size="sm" onClick={() => setCambioPass(true)}>
+                Cambiar
+              </Button>
+            )}
+          </div>
+          {cambioPass && (
+            <>
+              <div className="space-y-3">
+                <div>
+                  <label className="text-xs text-stone-500 dark:text-stone-400 mb-1 block">Contraseña actual</label>
+                  <input
+                    type="password"
+                    value={passActual}
+                    onChange={e => setPassActual(e.target.value)}
+                    className="w-full px-3 py-2 rounded-lg border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-sm text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-brand-verde"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs text-stone-500 dark:text-stone-400 mb-1 block">Nueva contraseña</label>
+                  <input
+                    type="password"
+                    value={passNueva}
+                    onChange={e => setPassNueva(e.target.value)}
+                    className="w-full px-3 py-2 rounded-lg border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-sm text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-brand-verde"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs text-stone-500 dark:text-stone-400 mb-1 block">Confirmar nueva contraseña</label>
+                  <input
+                    type="password"
+                    value={passConfirmar}
+                    onChange={e => setPassConfirmar(e.target.value)}
+                    className="w-full px-3 py-2 rounded-lg border border-stone-200 dark:border-stone-700 bg-white dark:bg-stone-800 text-sm text-stone-900 dark:text-stone-100 focus:outline-none focus:ring-2 focus:ring-brand-verde"
+                  />
+                </div>
+              </div>
+              <div className="flex gap-2 pt-1">
+                <Button variant="primary" size="sm" onClick={cambiarPassword} disabled={guardandoPass}>
+                  {guardandoPass ? 'Guardando…' : 'Guardar'}
+                </Button>
+                <Button variant="ghost" size="sm" onClick={() => {
+                  setCambioPass(false);
+                  setPassActual('');
+                  setPassNueva('');
+                  setPassConfirmar('');
+                }}>
+                  Cancelar
+                </Button>
+              </div>
+            </>
+          )}
+        </div>
 
         {/* Logout */}
         <button

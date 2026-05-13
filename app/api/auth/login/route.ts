@@ -7,6 +7,8 @@ export async function POST(request: NextRequest) {
   try {
     const { email, password } = await request.json();
 
+    console.log('[LOGIN] email recibido:', email);
+
     if (!email || !password) {
       return NextResponse.json(
         { error: 'Email y contraseña son requeridos' },
@@ -21,6 +23,9 @@ export async function POST(request: NextRequest) {
       .select('*')
       .eq('email', email.toLowerCase().trim())
       .single();
+
+    console.log('[LOGIN] usuario encontrado:', usuario ? { id: usuario.id, email: usuario.email, acceso_activo: usuario.acceso_activo, tiene_hash: !!usuario.password_hash } : null);
+    console.log('[LOGIN] error Supabase:', error);
 
     if (error || !usuario) {
       return NextResponse.json(
@@ -37,6 +42,9 @@ export async function POST(request: NextRequest) {
     }
 
     const passwordOk = await bcrypt.compare(password, usuario.password_hash);
+    console.log('[LOGIN] bcrypt.compare resultado:', passwordOk);
+    console.log('[LOGIN] hash en DB (primeros 20 chars):', usuario.password_hash?.slice(0, 20));
+
     if (!passwordOk) {
       return NextResponse.json(
         { error: 'Email o contraseña incorrectos' },
@@ -73,10 +81,11 @@ export async function POST(request: NextRequest) {
       path: '/',
     });
 
+    console.log('[LOGIN] login exitoso para:', usuario.email);
     return response;
 
   } catch (error) {
-    console.error('Error en login:', error);
+    console.error('[LOGIN] Error interno:', error);
     return NextResponse.json({ error: 'Error interno' }, { status: 500 });
   }
 }
